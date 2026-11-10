@@ -1,0 +1,38 @@
+{
+  "run": "CXTE-9 / e11a970f",
+  "ordinaryWheel": {
+    "before": "6:00–33:59 / 39:59",
+    "after": "6:00–33:59 / 39:59",
+    "scrollBefore": 0,
+    "scrollAfter": 230.9090881347656
+  },
+  "wheelZoom": {
+    "before": "6:00–33:59 / 39:59",
+    "after": "12:00–22:18 / 39:59",
+    "listScrollPreserved": true
+  },
+  "minimapDrag": {
+    "before": "12:00–22:18 / 39:59",
+    "after": "16:18–26:36 / 39:59"
+  },
+  "trackDrag": {
+    "before": "16:18–26:36 / 39:59",
+    "after": "14:45–25:02 / 39:59"
+  },
+  "fit": {
+    "range": "0:00–39:59 / 39:59",
+    "buttonDisabled": true
+  },
+  "zoomOut": {
+    "before": "6:00–33:59 / 39:59",
+    "after": "0:00–39:59 / 39:59"
+  },
+  "modeOffRestoresRowScroll": true,
+  "pollingPreserved": true,
+  "stickyAxis": {
+    "headerTop": 495.8238525390625,
+    "viewportTop": 495.8238525390625,
+    "passed": true
+  },
+  "method": "Actual Chrome UI: native wheel and drag, DOM button/checkbox actions; same source served through localhost"
+}

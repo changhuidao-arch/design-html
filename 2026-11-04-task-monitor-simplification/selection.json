@@ -1,0 +1,14 @@
+{
+  "id": "A",
+  "label": "选 A：关注优先清单",
+  "name": "关注优先清单",
+  "notes": "任务列表是唯一入口；选中后在同屏查看运行，证据继续下钻。",
+  "dials": {
+    "variance": 4,
+    "motion": 8,
+    "density": 7
+  },
+  "adjustments": "",
+  "source": "preview",
+  "receivedAt": "2026-11-04T08:12:44.611Z"
+}

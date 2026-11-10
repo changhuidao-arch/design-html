@@ -1,0 +1,10 @@
+{
+  "rawLogs": 2886,
+  "completeSearchScope": 1025,
+  "toolRecords": 186,
+  "renderBatchLimit": 40,
+  "offPageSearchPassed": true,
+  "allToolBatchesCovered": true,
+  "noResultsPassed": true,
+  "manualChecks": "see waterfall-usability/REVIEW.md"
+}

@@ -1,0 +1,12 @@
+{
+  "mappedAgents": 11,
+  "actualMessageTypes": [
+    "thinking",
+    "text",
+    "tool_use",
+    "tool_result",
+    "error"
+  ],
+  "unknownAgentFallback": "🤖",
+  "errorResultOverridesIcon": true
+}

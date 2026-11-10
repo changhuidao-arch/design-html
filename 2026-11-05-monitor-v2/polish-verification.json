@@ -1,0 +1,77 @@
+{
+  "views": [
+    {
+      "view": "list",
+      "samples": 128,
+      "minimumRatio": 4.89,
+      "below4_5": 0
+    },
+    {
+      "view": "graph",
+      "samples": 140,
+      "minimumRatio": 4.89,
+      "below4_5": 0
+    },
+    {
+      "view": "timeline",
+      "samples": 126,
+      "minimumRatio": 4.89,
+      "below4_5": 0
+    },
+    {
+      "view": "io",
+      "samples": 186,
+      "minimumRatio": 4.89,
+      "below4_5": 0
+    },
+    {
+      "view": "waterfall",
+      "samples": 176,
+      "minimumRatio": 4.89,
+      "below4_5": 0
+    },
+    {
+      "view": "alerts",
+      "samples": 114,
+      "minimumRatio": 4.89,
+      "below4_5": 0
+    },
+    {
+      "view": "metrics",
+      "samples": 93,
+      "minimumRatio": 4.89,
+      "below4_5": 0
+    },
+    {
+      "view": "runtimes",
+      "samples": 69,
+      "minimumRatio": 4.89,
+      "below4_5": 0
+    },
+    {
+      "view": "mobile",
+      "samples": 130,
+      "minimumRatio": 5.22,
+      "below4_5": 0
+    },
+    {
+      "view": "conversation",
+      "samples": 752,
+      "minimumRatio": 4.89,
+      "below4_5": 0
+    }
+  ],
+  "snapshotUnchanged": true,
+  "snapshotSha256": "faf61bafa6cebc7aad6eed085e6263e8f0d0aea6a2c4a966c9b827046d62cdf6",
+  "browserErrors": 0,
+  "mobileViewport": 355,
+  "mobileDocumentWidth": 355,
+  "keyboardTransitionDuration": "0s",
+  "waterfallZoomAndFitPassed": true,
+  "excluded": "disabled controls and decorative emoji; no claim of a complete WCAG or frame-rate audit",
+  "notMeasured": [
+    "FPS",
+    "physical touch device",
+    "OS reduced-motion in a real browser; guard verified in lifecycle test"
+  ]
+}

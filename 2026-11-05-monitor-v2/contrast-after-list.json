@@ -1,0 +1,1673 @@
+{
+  "samples": [
+    {
+      "bg": [
+        234,
+        241,
+        252
+      ],
+      "color": "rgb(36, 99, 209)",
+      "ratio": 4.89,
+      "selector": "span.v2-brand-mark",
+      "size": "19px",
+      "text": "M",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(36, 47, 63)",
+      "ratio": 12.72,
+      "selector": "span.",
+      "size": "18px",
+      "text": "Multica任务观测台",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.12,
+      "selector": "span.v2-brand-sub",
+      "size": "11px",
+      "text": "任务观测台",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.12,
+      "selector": "span.",
+      "size": "11px",
+      "text": "当前工作区",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.63,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "cx_test_new",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.12,
+      "selector": "span.v2-nav-label",
+      "size": "11px",
+      "text": "工作台",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(28, 68, 129)",
+      "ratio": 9.57,
+      "selector": "button.",
+      "size": "13px",
+      "text": "任务监控",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(77, 95, 119)",
+      "ratio": 6.14,
+      "selector": "button.",
+      "size": "13px",
+      "text": "异常提醒",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(77, 95, 119)",
+      "ratio": 6.14,
+      "selector": "button.",
+      "size": "13px",
+      "text": "执行性能",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(77, 95, 119)",
+      "ratio": 6.14,
+      "selector": "button.",
+      "size": "13px",
+      "text": "运行时",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.12,
+      "selector": "div.v2-side-bottom",
+      "size": "11px",
+      "text": "真实数据静态快照2026-11-05 08:33打开原版对比 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.12,
+      "selector": "small.",
+      "size": "9.16667px",
+      "text": "2026-11-05 08:33",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(36, 99, 209)",
+      "ratio": 5.23,
+      "selector": "a.",
+      "size": "11px",
+      "text": "打开原版对比 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "p.v2-breadcrumb",
+      "size": "12px",
+      "text": "工作区 / cx_test_new / 任务监控",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "h1.",
+      "size": "20px",
+      "text": "任务监控",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-snapshot-label",
+      "size": "11px",
+      "text": "静态快照 · 11 月 5 日",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(85, 103, 127)",
+      "ratio": 5.78,
+      "selector": "button.",
+      "size": "13px",
+      "text": "连接信息",
+      "visible": true
+    },
+    {
+      "bg": [
+        36,
+        99,
+        209
+      ],
+      "color": "rgb(255, 255, 255)",
+      "ratio": 5.55,
+      "selector": "a.v2-original",
+      "size": "12px",
+      "text": "对照原版 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.",
+      "size": "11px",
+      "text": "cx_test_new",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.mm-muted",
+      "size": "12px",
+      "text": "静态快照 · 刷新仅重放已有数据",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "label.mm-workspace",
+      "size": "11px",
+      "text": "工作区选择工作区cx_testcx_test_newAutoProjectharping",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "button.",
+      "size": "13px",
+      "text": "重载快照",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.13,
+      "selector": "h2.",
+      "size": "18px",
+      "text": "业务任务",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.31,
+      "selector": "p.",
+      "size": "12px",
+      "text": "查看业务进展，进入任务追踪运行与执行证据。",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.31,
+      "selector": "span.",
+      "size": "11px",
+      "text": "10 个任务 · 同一工作区快照",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.",
+      "size": "12px",
+      "text": "业务任务",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "24px",
+      "text": "10",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "small.",
+      "size": "11px",
+      "text": "当前工作区",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.",
+      "size": "12px",
+      "text": "活动运行任务",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "24px",
+      "text": "0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "small.",
+      "size": "11px",
+      "text": "正在执行或等待",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.",
+      "size": "12px",
+      "text": "当前需关注",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "24px",
+      "text": "0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "small.",
+      "size": "11px",
+      "text": "告警或状态待核实",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.",
+      "size": "12px",
+      "text": "有历史失败",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "24px",
+      "text": "1",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "small.",
+      "size": "11px",
+      "text": "不表示当前仍在故障",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.13,
+      "selector": "div.v2-view-label",
+      "size": "13px",
+      "text": "任务列表",
+      "visible": true
+    },
+    {
+      "bg": [
+        243,
+        245,
+        248
+      ],
+      "color": "rgb(83, 98, 120)",
+      "ratio": 5.68,
+      "selector": "th.",
+      "size": "11px",
+      "text": "任务 / 层级",
+      "visible": true
+    },
+    {
+      "bg": [
+        243,
+        245,
+        248
+      ],
+      "color": "rgb(83, 98, 120)",
+      "ratio": 5.68,
+      "selector": "th.",
+      "size": "11px",
+      "text": "业务状态",
+      "visible": true
+    },
+    {
+      "bg": [
+        243,
+        245,
+        248
+      ],
+      "color": "rgb(83, 98, 120)",
+      "ratio": 5.68,
+      "selector": "th.",
+      "size": "11px",
+      "text": "当前执行",
+      "visible": true
+    },
+    {
+      "bg": [
+        243,
+        245,
+        248
+      ],
+      "color": "rgb(83, 98, 120)",
+      "ratio": 5.68,
+      "selector": "th.v2-number",
+      "size": "11px",
+      "text": "运行记录",
+      "visible": true
+    },
+    {
+      "bg": [
+        243,
+        245,
+        248
+      ],
+      "color": "rgb(83, 98, 120)",
+      "ratio": 5.68,
+      "selector": "th.",
+      "size": "11px",
+      "text": "关注情况",
+      "visible": true
+    },
+    {
+      "bg": [
+        243,
+        245,
+        248
+      ],
+      "color": "rgb(83, 98, 120)",
+      "ratio": 5.68,
+      "selector": "span.v2-sr-only",
+      "size": "11px",
+      "text": "操作",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-muted",
+      "size": "11px",
+      "text": "CXTE-3",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "加密功能迁移",
+      "visible": true
+    },
+    {
+      "bg": [
+        237,
+        245,
+        255
+      ],
+      "color": "rgb(35, 92, 156)",
+      "ratio": 6.2,
+      "selector": "span.v2-status.state-in_progress",
+      "size": "11px",
+      "text": "处理中",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无活动运行",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "4",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "次",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无当前告警",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(36, 95, 181)",
+      "ratio": 6.21,
+      "selector": "button.v2-open-task",
+      "size": "11px",
+      "text": "查看 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-muted",
+      "size": "11px",
+      "text": "↳ CXTE-9 · CXTE-3 的子任务",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "CXTE-3 需求评审（门禁 G1）",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        249,
+        233
+      ],
+      "color": "rgb(120, 85, 18)",
+      "ratio": 6.43,
+      "selector": "span.v2-status.state-in_review",
+      "size": "11px",
+      "text": "待审核",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无活动运行",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "2",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "次",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无当前告警",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(36, 95, 181)",
+      "ratio": 6.21,
+      "selector": "button.v2-open-task",
+      "size": "11px",
+      "text": "查看 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-muted",
+      "size": "11px",
+      "text": "↳ CXTE-4 · CXTE-3 的子任务",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "CXTE-3 需求澄清与拆解：V2 传输加密迁移（demo_new）",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        249,
+        233
+      ],
+      "color": "rgb(120, 85, 18)",
+      "ratio": 6.43,
+      "selector": "span.v2-status.state-in_review",
+      "size": "11px",
+      "text": "待审核",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无活动运行",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "9",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "次",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        251,
+        243
+      ],
+      "color": "rgb(128, 85, 21)",
+      "ratio": 6.3,
+      "selector": "button.v2-health.history",
+      "size": "11px",
+      "text": "历史失败 4 次",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(36, 95, 181)",
+      "ratio": 6.21,
+      "selector": "button.v2-open-task",
+      "size": "11px",
+      "text": "查看 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-muted",
+      "size": "11px",
+      "text": "↳ CXTE-10 · CXTE-3 的子任务",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "CXTE-3 构建（CI/CD）",
+      "visible": true
+    },
+    {
+      "bg": [
+        243,
+        245,
+        247
+      ],
+      "color": "rgb(83, 96, 117)",
+      "ratio": 5.83,
+      "selector": "span.v2-status.state-backlog",
+      "size": "11px",
+      "text": "待规划",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无活动运行",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "次",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无当前告警",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(36, 95, 181)",
+      "ratio": 6.21,
+      "selector": "button.v2-open-task",
+      "size": "11px",
+      "text": "查看 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-muted",
+      "size": "11px",
+      "text": "↳ CXTE-6 · CXTE-3 的子任务",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "CXTE-3 代码审查（门禁 G3）",
+      "visible": true
+    },
+    {
+      "bg": [
+        243,
+        245,
+        247
+      ],
+      "color": "rgb(83, 96, 117)",
+      "ratio": 5.83,
+      "selector": "span.v2-status.state-backlog",
+      "size": "11px",
+      "text": "待规划",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无活动运行",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "次",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无当前告警",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(36, 95, 181)",
+      "ratio": 6.21,
+      "selector": "button.v2-open-task",
+      "size": "11px",
+      "text": "查看 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-muted",
+      "size": "11px",
+      "text": "↳ CXTE-7 · CXTE-3 的子任务",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "CXTE-3 编码实现与自测：V2 传输加密迁移（demo_new）",
+      "visible": true
+    },
+    {
+      "bg": [
+        243,
+        245,
+        247
+      ],
+      "color": "rgb(83, 96, 117)",
+      "ratio": 5.83,
+      "selector": "span.v2-status.state-backlog",
+      "size": "11px",
+      "text": "待规划",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无活动运行",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "次",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无当前告警",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(36, 95, 181)",
+      "ratio": 6.21,
+      "selector": "button.v2-open-task",
+      "size": "11px",
+      "text": "查看 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-muted",
+      "size": "11px",
+      "text": "↳ CXTE-8 · CXTE-3 的子任务",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "CXTE-3 技术方案设计评审（门禁 G2）",
+      "visible": false
+    },
+    {
+      "bg": [
+        243,
+        245,
+        247
+      ],
+      "color": "rgb(83, 96, 117)",
+      "ratio": 5.83,
+      "selector": "span.v2-status.state-backlog",
+      "size": "11px",
+      "text": "待规划",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无活动运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "0",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "次",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无当前告警",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(36, 95, 181)",
+      "ratio": 6.21,
+      "selector": "button.v2-open-task",
+      "size": "11px",
+      "text": "查看 ↗",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-muted",
+      "size": "11px",
+      "text": "↳ CXTE-5 · CXTE-3 的子任务",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "CXTE-3 技术方案设计：V2 传输加密迁移（demo_new）",
+      "visible": false
+    },
+    {
+      "bg": [
+        243,
+        245,
+        247
+      ],
+      "color": "rgb(83, 96, 117)",
+      "ratio": 5.83,
+      "selector": "span.v2-status.state-backlog",
+      "size": "11px",
+      "text": "待规划",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无活动运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "0",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "次",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无当前告警",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(36, 95, 181)",
+      "ratio": 6.21,
+      "selector": "button.v2-open-task",
+      "size": "11px",
+      "text": "查看 ↗",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-muted",
+      "size": "11px",
+      "text": "CXTE-2",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "加密迁移",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        249,
+        233
+      ],
+      "color": "rgb(120, 85, 18)",
+      "ratio": 6.43,
+      "selector": "span.v2-status.state-in_review",
+      "size": "11px",
+      "text": "待审核",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无活动运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "1",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "次",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无当前告警",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(36, 95, 181)",
+      "ratio": 6.21,
+      "selector": "button.v2-open-task",
+      "size": "11px",
+      "text": "查看 ↗",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-muted",
+      "size": "11px",
+      "text": "CXTE-1",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "运行时环境检测",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        249,
+        233
+      ],
+      "color": "rgb(120, 85, 18)",
+      "ratio": 6.43,
+      "selector": "span.v2-status.state-in_review",
+      "size": "11px",
+      "text": "待审核",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无活动运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "6",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "次",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-muted",
+      "size": "11px",
+      "text": "无当前告警",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(36, 95, 181)",
+      "ratio": 6.21,
+      "selector": "button.v2-open-task",
+      "size": "11px",
+      "text": "查看 ↗",
+      "visible": false
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.31,
+      "selector": "span.",
+      "size": "11px",
+      "text": "显示 10 / 10 个任务",
+      "visible": false
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.31,
+      "selector": "span.",
+      "size": "11px",
+      "text": "业务状态与运行结果独立记录",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.",
+      "size": "10px",
+      "text": "新版对照稿 · 所有系统写操作已隔离",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.",
+      "size": "10px",
+      "text": "真实快照 · 10 个任务 / 22 次运行 / 6,960 条日志",
+      "visible": true
+    }
+  ],
+  "url": "http://127.0.0.1:55317/",
+  "viewport": [
+    1437,
+    855
+  ]
+}

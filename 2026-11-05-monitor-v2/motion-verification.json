@@ -1,0 +1,11 @@
+{
+  "initialLoadStill": true,
+  "pollingStill": true,
+  "keyboardImmediate": true,
+  "reducedMotionSuppressed": true,
+  "preferenceChangeCancels": true,
+  "rapidSwitchContinuesFromCurrent": true,
+  "latePassiveChangesStill": true,
+  "disclosureContentOnly": true,
+  "cleanupComplete": true
+}

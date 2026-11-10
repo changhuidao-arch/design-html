@@ -1,0 +1,11 @@
+import {build} from '../../node_modules/esbuild/lib/main.js';
+import {copyFile,readFile,writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
+await copyFile('C:/Users/BW/.dsh/profiles/desktop/node_modules/dsh-multica-monitor/lib/client.js',new URL('plugin.js',import.meta.url));
+const original=await readFile(new URL('plugin.js',import.meta.url),'utf8');
+await writeFile(new URL('plugin.original.js',import.meta.url),original);
+await writeFile(new URL('plugin.js',import.meta.url),original.replace('https://persistent.oaistatic.com/plugins/visualize/widgets/1.0.59/waterfall.js','./1.0.59/waterfall.js'));
+await build({entryPoints:[new URL('boot.jsx',import.meta.url).pathname.slice(1)],outfile:new URL('boot.js',import.meta.url).pathname.slice(1),bundle:true,format:'iife',platform:'browser',jsx:'automatic',minify:true,define:{'process.env.NODE_ENV':'"production"'}});
+const plugin=await readFile(new URL('plugin.js',import.meta.url));
+await writeFile(new URL('provenance.json',import.meta.url),JSON.stringify({version:'0.12.13',source:'Installed DSH desktop plugin',originalSha256:createHash('sha256').update(original).digest('hex'),pluginSha256:createHash('sha256').update(plugin).digest('hex'),adaptation:'Only waterfall widget URL replaced with local identical asset',capturedAt:JSON.parse(await readFile(new URL('snapshot.json',import.meta.url))).capturedAt},null,2));
+console.log('Built static replica');

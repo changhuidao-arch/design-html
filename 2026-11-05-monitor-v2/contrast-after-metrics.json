@@ -1,0 +1,1361 @@
+{
+  "samples": [
+    {
+      "bg": [
+        234,
+        241,
+        252
+      ],
+      "color": "rgb(36, 99, 209)",
+      "ratio": 4.89,
+      "selector": "span.v2-brand-mark",
+      "size": "19px",
+      "text": "M",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(36, 47, 63)",
+      "ratio": 12.72,
+      "selector": "span.",
+      "size": "18px",
+      "text": "Multica任务观测台",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.12,
+      "selector": "span.v2-brand-sub",
+      "size": "11px",
+      "text": "任务观测台",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.12,
+      "selector": "span.",
+      "size": "11px",
+      "text": "当前工作区",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.63,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "cx_test_new",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.12,
+      "selector": "span.v2-nav-label",
+      "size": "11px",
+      "text": "工作台",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(77, 95, 119)",
+      "ratio": 6.14,
+      "selector": "button.",
+      "size": "13px",
+      "text": "任务监控",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(77, 95, 119)",
+      "ratio": 6.14,
+      "selector": "button.",
+      "size": "13px",
+      "text": "异常提醒",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(28, 68, 129)",
+      "ratio": 9.57,
+      "selector": "button.",
+      "size": "13px",
+      "text": "执行性能",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(77, 95, 119)",
+      "ratio": 6.14,
+      "selector": "button.",
+      "size": "13px",
+      "text": "运行时",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.12,
+      "selector": "div.v2-side-bottom",
+      "size": "11px",
+      "text": "真实数据静态快照2026-11-05 08:33打开原版对比 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.12,
+      "selector": "small.",
+      "size": "9.16667px",
+      "text": "2026-11-05 08:33",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(36, 99, 209)",
+      "ratio": 5.23,
+      "selector": "a.",
+      "size": "11px",
+      "text": "打开原版对比 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "p.v2-breadcrumb",
+      "size": "12px",
+      "text": "工作区 / cx_test_new / 执行性能",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "h1.",
+      "size": "20px",
+      "text": "执行性能",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-snapshot-label",
+      "size": "11px",
+      "text": "静态快照 · 11 月 5 日",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(85, 103, 127)",
+      "ratio": 5.78,
+      "selector": "button.",
+      "size": "13px",
+      "text": "连接信息",
+      "visible": true
+    },
+    {
+      "bg": [
+        36,
+        99,
+        209
+      ],
+      "color": "rgb(255, 255, 255)",
+      "ratio": 5.55,
+      "selector": "a.v2-original",
+      "size": "12px",
+      "text": "对照原版 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.",
+      "size": "11px",
+      "text": "cx_test_new",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.mm-muted",
+      "size": "12px",
+      "text": "静态快照 · 刷新仅重放已有数据",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "label.mm-workspace",
+      "size": "11px",
+      "text": "工作区选择工作区cx_testcx_test_newAutoProjectharping",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "button.",
+      "size": "13px",
+      "text": "重载快照",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.",
+      "size": "12px",
+      "text": "活动运行 0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "17px",
+      "text": "0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.",
+      "size": "12px",
+      "text": "排队 0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "17px",
+      "text": "0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.",
+      "size": "12px",
+      "text": "待关注 0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "17px",
+      "text": "0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.",
+      "size": "12px",
+      "text": "已观测终态 0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "17px",
+      "text": "0",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.13,
+      "selector": "h2.",
+      "size": "17px",
+      "text": "执行性能",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.8,
+      "selector": "span.mm-muted",
+      "size": "12px",
+      "text": "观测开始于 2026/11/5 08:33:32",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "14px",
+      "text": "暂无终态样本",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "本次监控从 2026/11/5 08:33:32 开始；启动前的历史终态不计入耗时和失败率。",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "当前活动运行",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "25px",
+      "text": "0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "small.",
+      "size": "12px",
+      "text": "排队 0 · 状态待核实 0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "p.mm-muted.mm-metric-empty",
+      "size": "12px",
+      "text": "本次还没有运行进入完成或失败状态。出现终态后，这里才会比较失败率与耗时。",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "summary.",
+      "size": "13px",
+      "text": "查看排队耗时与采集数据",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "平均排队耗时",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "25px",
+      "text": "样本不足",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "small.",
+      "size": "12px",
+      "text": "P95 — · 0 个样本",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "增量日志",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "25px",
+      "text": "0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "small.",
+      "size": "12px",
+      "text": "平均 0 条 / 分钟",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "一轮采集耗时",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "25px",
+      "text": "20 毫秒",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "small.",
+      "size": "12px",
+      "text": "包括 API 与日志补偿读取",
+      "visible": true
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.69,
+      "selector": "p.mm-muted.mm-metric-note",
+      "size": "11px",
+      "text": "本次最多保留 1,000 次终态样本，当前追踪最多 100 次运行；重启或修改配置会重新计时。",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "h3.",
+      "size": "14px",
+      "text": "模型用量与成本",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.mm-muted",
+      "size": "12px",
+      "text": "3 次运行有用量记录",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "输入 / 输出 Token",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "18px",
+      "text": "1,145,713 / 171,038",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "缓存读取 / 写入 Token",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "18px",
+      "text": "19,492,864 / 0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "已上报成本 · USD",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "18px",
+      "text": "—",
+      "visible": true
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.69,
+      "selector": "p.mm-muted.mm-metric-note",
+      "size": "11px",
+      "text": "仅已返回 usage 的已监控运行，按运行ID去重；每轮最多补充3个任务详情，同任务至少间隔60秒，不代表实时全工作区用量；缺失用",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "14px",
+      "text": "智能体并发",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.mm-muted",
+      "size": "12px",
+      "text": "11 个智能体 · 展开查看各自上限",
+      "visible": true
+    },
+    {
+      "bg": [
+        243,
+        245,
+        248
+      ],
+      "color": "rgb(83, 98, 120)",
+      "ratio": 5.68,
+      "selector": "th.",
+      "size": "11px",
+      "text": "智能体",
+      "visible": true
+    },
+    {
+      "bg": [
+        243,
+        245,
+        248
+      ],
+      "color": "rgb(83, 98, 120)",
+      "ratio": 5.68,
+      "selector": "th.",
+      "size": "11px",
+      "text": "当前活动 / 配置上限",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-label",
+      "size": "13px",
+      "text": "🦄Mika",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-avatar",
+      "size": "24px",
+      "text": "🦄",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "td.",
+      "size": "13px",
+      "text": "0 / 5",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-label",
+      "size": "13px",
+      "text": "🤖工作区小助手",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-avatar",
+      "size": "24px",
+      "text": "🤖",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "td.",
+      "size": "13px",
+      "text": "0 / 6",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-label",
+      "size": "13px",
+      "text": "🦊需求文档拆解分析师",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-avatar",
+      "size": "24px",
+      "text": "🦊",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "td.",
+      "size": "13px",
+      "text": "0 / 6",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-label",
+      "size": "13px",
+      "text": "🧠技术方案设计师",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-avatar",
+      "size": "24px",
+      "text": "🧠",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "td.",
+      "size": "13px",
+      "text": "0 / 6",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-label",
+      "size": "13px",
+      "text": "🐼开发工程师",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-avatar",
+      "size": "24px",
+      "text": "🐼",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "td.",
+      "size": "13px",
+      "text": "0 / 6",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-label",
+      "size": "13px",
+      "text": "⭐Jenkins Build Agent",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-avatar",
+      "size": "24px",
+      "text": "⭐",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "td.",
+      "size": "13px",
+      "text": "0 / 6",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-label",
+      "size": "13px",
+      "text": "🌞项目经理",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-avatar",
+      "size": "24px",
+      "text": "🌞",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "td.",
+      "size": "13px",
+      "text": "0 / 5",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-label",
+      "size": "13px",
+      "text": "🐙需求评审员",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-avatar",
+      "size": "24px",
+      "text": "🐙",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "td.",
+      "size": "13px",
+      "text": "0 / 6",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-label",
+      "size": "13px",
+      "text": "🐯技术方案设计评审员",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-avatar",
+      "size": "24px",
+      "text": "🐯",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "td.",
+      "size": "13px",
+      "text": "0 / 6",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-label",
+      "size": "13px",
+      "text": "🦉缺陷解决方案设计师",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-avatar",
+      "size": "24px",
+      "text": "🦉",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "td.",
+      "size": "13px",
+      "text": "0 / 6",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-label",
+      "size": "13px",
+      "text": "🐵代码审查员",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.ui-agent-avatar",
+      "size": "24px",
+      "text": "🐵",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "td.",
+      "size": "13px",
+      "text": "0 / 6",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "h3.",
+      "size": "14px",
+      "text": "机器资源",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        249,
+        235
+      ],
+      "color": "rgb(128, 85, 21)",
+      "ratio": 6.2,
+      "selector": "span.mm-badge.pending",
+      "size": "11px",
+      "text": "采集能力未接入",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "dt.",
+      "size": "11px",
+      "text": "CPU",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "dd.",
+      "size": "14px",
+      "text": "Multica 当前读取接口未提供 CPU 指标",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "dt.",
+      "size": "11px",
+      "text": "内存",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "dd.",
+      "size": "14px",
+      "text": "Multica 当前读取接口未提供内存指标",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.69,
+      "selector": "p.mm-muted.mm-metric-note",
+      "size": "11px",
+      "text": "进程级性能采样需要后续在执行机器的守护进程中增加采集能力。",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.",
+      "size": "10px",
+      "text": "新版对照稿 · 所有系统写操作已隔离",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.",
+      "size": "10px",
+      "text": "真实快照 · 10 个任务 / 22 次运行 / 6,960 条日志",
+      "visible": true
+    }
+  ],
+  "url": "http://127.0.0.1:55317/?view=metrics",
+  "viewport": [
+    1437,
+    855
+  ]
+}

@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>任务监控重构 · 方向样机</title>
+  <style>
+    :root{color-scheme:light;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;background:#f2f3f3;color:#202628;font-size:14px;line-height:1.55}
+    *{box-sizing:border-box}body{margin:0;min-width:320px}button,input,textarea{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #ef8b46;outline-offset:3px}a{color:inherit}
+    .topbar{height:56px;border-bottom:1px solid #d7dbdc;background:#f9f9f8;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 28px}.topbar strong{font-size:14px;font-weight:600;white-space:nowrap}.topbar .top-meta{display:flex;align-items:center;gap:18px;color:#566165;font-size:12px}.topbar .reply{border:1px solid #c8cecf;border-radius:99px;padding:3px 10px;background:#fff;color:#36545d}
+    .intro,.dials,.grid,.rationale,.closing{max-width:1600px;margin:0 auto}.intro{padding:28px 28px 20px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:end}.intro h1{margin:0;font-size:30px;font-weight:600;letter-spacing:.01em;line-height:1.25}.intro p{margin:8px 0 0;color:#5c666a;max-width:70ch}.intro .scope{font-size:12px;color:#586468;text-align:right}.intro .scope b{display:block;color:#253236;font-weight:600;margin-bottom:4px}.path{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin-top:18px}.path span{border:1px solid #cbd2d3;background:#fff;border-radius:5px;padding:5px 11px;font-weight:600;font-size:12px}.path i{font-style:normal;color:#7d898b}.path .secondary{background:transparent;border-style:dashed;color:#627073;font-weight:400}
+    .dials{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:0 28px 23px}.dial{border:1px solid #d4d9d9;background:#f9faf9;border-radius:7px;padding:10px 13px;display:grid;grid-template-columns:1fr auto;gap:6px 12px;align-items:center}.dial strong{font-size:12px;font-weight:600}.dial small{grid-column:1/3;color:#697477;font-size:11px}.dial output{font:600 15px/1.2 Consolas,monospace;color:#263a40}.dial input{grid-column:1/3;width:100%;margin:0;accent-color:#315f6e}
+    .grid{padding:0 28px 28px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.option{min-width:0;background:#fff;border:1px solid #cfd5d5;border-radius:10px;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 3px 14px #1b282c0a}.option.selected{border:2px solid #294d58;box-shadow:0 0 0 3px #294d5817}.option-head{padding:13px 16px;display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid #dbe0e0}.option-name{display:flex;align-items:center;gap:9px;min-width:0}.letter{width:26px;height:26px;border-radius:5px;background:#202d32;color:#fff;display:grid;place-items:center;font:600 13px Consolas,monospace}.option h2{font-size:16px;line-height:1.2;margin:0;font-weight:600}.tag{font-size:11px;color:#56666b;white-space:nowrap}.rec{color:#7b4c20;background:#fff2de;border:1px solid #e7c694;padding:2px 7px;border-radius:4px;font-size:11px;font-weight:600}
+    .mock{width:100%;aspect-ratio:12/7;position:relative;overflow:hidden;background:#e9ebeb}.stage-shell{position:absolute;top:0;left:0;width:960px;height:560px;transform-origin:0 0;transform:scale(var(--stage-scale,.65));pointer-events:none}.stage-shell .mobile-a,.stage-shell .mobile-b,.stage-shell .mobile-c,.stage-shell .mobile-d{display:none!important}
+    .meta{padding:14px 16px 16px;display:grid;gap:11px;flex:1}.meta p{margin:0;color:#4f5e63;font-size:12px;line-height:1.5;min-height:36px}.qmdp-pick-button{width:100%;min-height:42px;border:1px solid #30434a;background:#283b42;color:#fff;border-radius:5px;font-weight:600}.qmdp-pick-button:hover{background:#3d5962}.qmdp-pick-button:active{background:#1f3137}
+    .rationale{padding:0 28px 32px}.rationale h2{font-size:17px;margin:0 0 13px;font-weight:600}.comparison{background:#fff;border:1px solid #d5dada;border-radius:8px;overflow:hidden}.comparison .row{display:grid;grid-template-columns:120px minmax(0,1.2fr) minmax(0,1.2fr) minmax(0,.8fr);gap:12px;padding:12px 16px;border-top:1px solid #e1e5e4;font-size:12px}.comparison .row:first-child{border-top:0;background:#f6f8f7;color:#576368;font-weight:600}.comparison .row strong{font-weight:600}.comparison .recommend{background:#f8f3e9}.closing{padding:0 28px 32px;color:#627073;font-size:12px}.closing b{color:#273d45}
+    .confirm{position:fixed;inset:0;background:#10171991;display:none;place-items:center;z-index:10;padding:16px}.confirm.open{display:grid}.dialog{width:min(520px,100%);background:#fff;border:1px solid #c8d0d0;border-radius:10px;padding:22px;box-shadow:0 24px 70px #0003}.dialog h2{font-size:20px;margin:0 0 6px}.dialog p{margin:0 0 14px;color:#536267}.dialog label{font-size:12px;font-weight:600;display:block;margin-bottom:6px}.dialog textarea{width:100%;height:90px;resize:vertical;border:1px solid #aab5b9;border-radius:5px;padding:10px}.dialog-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:15px}.dialog-actions button{border:1px solid #bfc8ca;border-radius:5px;padding:9px 14px;background:#fff}.dialog-actions .submit{background:#283b42;color:#fff;border-color:#283b42;font-weight:600}.toast{position:fixed;left:50%;bottom:20px;transform:translate(-50%,10px);opacity:0;pointer-events:none;background:#202e33;color:#fff;border-radius:6px;padding:10px 16px;z-index:11;box-shadow:0 8px 30px #0002;transition:opacity .18s ease-out,transform .18s ease-out}.toast.show{opacity:1;transform:translate(-50%,0)}
+    @media(max-width:760px){.topbar{height:auto;min-height:54px;padding:10px 16px;flex-wrap:wrap}.topbar .top-meta{gap:8px;flex-wrap:wrap}.intro{grid-template-columns:1fr;padding:22px 16px 18px;gap:8px}.intro h1{font-size:24px}.intro .scope{text-align:left}.path{gap:5px}.dials{grid-template-columns:1fr;padding:0 16px 20px}.grid{grid-template-columns:1fr;padding:0 16px 24px;gap:15px}.mock{aspect-ratio:auto;min-height:250px}.stage-shell{position:static;width:100%;height:auto;transform:none!important}.stage-shell .demo-a,.stage-shell .demo-b,.stage-shell .demo-c,.stage-shell .demo-d{display:none!important}.stage-shell .mobile-a,.stage-shell .mobile-b,.stage-shell .mobile-c,.stage-shell .mobile-d{display:block!important;max-width:100%;margin:0 auto}.option-head{padding:11px 12px}.meta{padding:12px}.meta p{min-height:0}.rationale{padding:0 16px 24px}.comparison{overflow-x:auto}.comparison .row{min-width:650px}.closing{padding:0 16px 28px}.toast{width:calc(100% - 32px);text-align:center}}
+    @media(prefers-reduced-motion:reduce){.toast{transition:none}}
+  </style>
+  <style>
+.demo-a,.demo-a *,.mobile-a,.mobile-a *{box-sizing:border-box}
+.demo-a{width:960px;height:560px;overflow:hidden;background:#f6f7f5;color:#20262d;font:14px/1.45 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;display:flex;flex-direction:column;border:1px solid #daddd9}
+.demo-a .a-top{height:50px;flex:none;display:flex;align-items:center;justify-content:space-between;padding:0 22px;background:#fff;border-bottom:1px solid #e2e5e1}
+.demo-a .a-brand{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:600}.demo-a .a-brand-mark{width:18px;height:18px;display:grid;place-items:center;background:#24292d;color:#fff;border-radius:4px;font-size:13px}.demo-a .a-brand small{font-size:12px;color:#838b92;font-weight:400;margin-left:9px}.demo-a .a-sync{font-size:12px;color:#69737a}.demo-a .a-sync b{font-weight:600;color:#29343a}
+.demo-a .a-main{display:grid;grid-template-columns:310px minmax(0,1fr);min-height:0;flex:1}
+.demo-a .a-queue{background:#fbfcfa;border-right:1px solid #e1e5e0;padding:17px 14px 14px 18px;overflow:hidden}.demo-a .a-queue-heading,.demo-a .a-run-heading,.demo-a .a-detail-top{display:flex;align-items:center;justify-content:space-between}.demo-a h2,.demo-a h3,.mobile-a h2,.mobile-a h3{margin:0;font-weight:600}.demo-a .a-queue-heading h3{font-size:16px}.demo-a .a-muted{color:#758088}.demo-a .a-queue-heading span{font-size:12px}
+.demo-a .a-search{margin-top:13px;height:35px;display:flex;align-items:center;padding:0 11px;border:1px solid #dce1dc;border-radius:6px;background:#fff;color:#879098;font-size:12px}.demo-a .a-search-icon{font-size:17px;margin-right:9px;color:#72808a;line-height:1}
+.demo-a .a-filter{display:flex;gap:5px;margin:13px 0 16px}.demo-a .a-filter span{padding:5px 10px;border-radius:5px;color:#647078;font-size:12px;white-space:nowrap}.demo-a .a-filter .active{background:#e9ece9;color:#202b30;font-weight:600}
+.demo-a .a-section-title{display:flex;justify-content:space-between;padding:0 7px 7px;color:#77838a;font-size:11px;letter-spacing:.03em}.demo-a .a-task{display:flex;align-items:flex-start;justify-content:space-between;gap:9px;padding:10px 9px;margin:0 0 4px;border:1px solid transparent;border-radius:6px;min-height:63px}.demo-a .a-task.selected{background:#fff7ef;border-color:#e3bd9b}.demo-a .a-task strong{display:block;font-size:13px;line-height:1.4;font-weight:600}.demo-a .a-task small{display:block;font-size:11px;color:#77838a;margin-top:3px;white-space:nowrap}.demo-a .a-task em{font-style:normal;font-size:11px;color:#8d643f;background:#f7eadd;padding:3px 6px;border-radius:4px;white-space:nowrap}.demo-a .a-task .neutral{color:#53636c;background:#eff1ef}.demo-a .a-section-title.other{margin-top:13px;border-top:1px solid #e4e8e3;padding-top:13px}
+.demo-a .a-detail{padding:16px 24px 17px;min-width:0;overflow:hidden}.demo-a .a-detail-top{font-size:11px;color:#7a858a}.demo-a .a-detail-top .a-open{color:#424d53;text-decoration:underline;text-underline-offset:3px}.demo-a .a-identity{display:flex;align-items:flex-start;justify-content:space-between;margin-top:9px}.demo-a .a-identity .a-id{font-size:12px;color:#98643d;font-weight:600;letter-spacing:.03em}.demo-a .a-identity h2{font-size:22px;line-height:1.25;margin:3px 0 3px}.demo-a .a-identity p{margin:0;color:#69747a;font-size:12px}.demo-a .a-business{font-size:11px;color:#54636a;background:#ecf0ee;border:1px solid #dce3df;border-radius:4px;padding:4px 7px;white-space:nowrap}
+.demo-a .a-state{display:flex;gap:18px;align-items:center;margin-top:13px;padding:11px 12px;background:#eef1ee;border-radius:6px;color:#56636b;font-size:12px}.demo-a .a-state strong{font-weight:600;color:#263139}.demo-a .a-state .a-history{color:#895b38}.demo-a .a-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#7c9691;margin-right:6px;vertical-align:middle}
+.demo-a .a-run-heading{margin-top:17px;margin-bottom:9px}.demo-a .a-run-heading h3{font-size:16px}.demo-a .a-run-heading h3 small{font-weight:400;color:#7c868d;font-size:11px;margin-left:8px}.demo-a .a-run-actions{display:flex;align-items:center;gap:12px;font-size:11px;color:#6d7880}.demo-a .a-run-actions b{color:#364650;font-weight:600}.demo-a .a-run-actions .a-graph{border:1px solid #d7ded9;padding:5px 8px;border-radius:4px;background:#fff}
+.demo-a .a-run-table{background:#fff;border:1px solid #e0e4df;border-radius:7px;overflow:hidden}.demo-a .a-cols,.demo-a .a-run{display:grid;grid-template-columns:43% 15% 24% 18%;align-items:center;gap:0}.demo-a .a-cols{height:29px;background:#f5f7f4;border-bottom:1px solid #e5e8e3;color:#869098;font-size:11px;padding:0 13px}.demo-a .a-cols span:nth-child(3){text-align:right;padding-right:17px}.demo-a .a-run{height:51px;padding:0 13px;border-bottom:1px solid #edf0ec;font-size:12px}.demo-a .a-run:last-child{border-bottom:0}.demo-a .a-run .a-agent{font-weight:600;color:#263038;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.demo-a .a-run .a-agent small{display:block;font-weight:400;color:#828c91;margin-top:2px}.demo-a .a-run .a-status{font-size:11px;color:#4f6e5b}.demo-a .a-run .a-status.failed{color:#ab554e}.demo-a .a-time{position:relative;text-align:right;font-variant-numeric:tabular-nums;font-weight:600;color:#263139;padding-right:17px}.demo-a .a-time:before{content:"";position:absolute;left:0;right:17px;bottom:-5px;height:3px;background:#ebeeea;border-radius:3px}.demo-a .a-time:after{content:"";position:absolute;left:0;bottom:-5px;height:3px;width:var(--w);background:#8b9ba2;border-radius:3px}.demo-a .a-run .a-evidence{color:#a75d31;font-size:11px;text-align:right}.demo-a .a-run .a-evidence.muted{color:#79848b}.demo-a .a-table-foot{margin-top:9px;display:flex;justify-content:space-between;color:#78838a;font-size:11px}.demo-a .a-table-foot strong{color:#454f56;font-weight:600}
+.mobile-a{width:320px;height:600px;overflow:hidden;background:#f7f8f5;color:#20262d;font:12px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;border:1px solid #daddd9}.mobile-a .m-head{height:48px;padding:0 13px;display:flex;align-items:center;justify-content:space-between;background:#fff;border-bottom:1px solid #e2e5e1}.mobile-a .m-head strong{font-size:15px}.mobile-a .m-head span{color:#77838a}.mobile-a .m-main{padding:12px}.mobile-a .m-heading{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}.mobile-a .m-heading h3{font-size:14px}.mobile-a .m-heading span{color:#77838a}.mobile-a .m-task{background:#fff;border:1px solid #e1e5e0;border-radius:6px;padding:8px 9px;display:flex;justify-content:space-between;align-items:flex-start;gap:6px;margin-bottom:5px}.mobile-a .m-task.selected{background:#fff7ef;border-color:#e3bd9b}.mobile-a .m-task strong{display:block;font-weight:600;font-size:12px}.mobile-a .m-task small{display:block;color:#7c858a;font-size:12px;margin-top:2px}.mobile-a .m-task em{font-style:normal;font-size:12px;color:#8d643f;white-space:nowrap}.mobile-a .m-divider{border-top:1px solid #e2e6e1;margin:12px -12px 10px}.mobile-a .m-issue{font-size:12px;color:#995f36;font-weight:600}.mobile-a h2{font-size:17px;margin:2px 0 2px}.mobile-a .m-sub{color:#68747a;font-size:12px}.mobile-a .m-state{margin-top:9px;background:#ecefeb;padding:7px 9px;color:#52626a;border-radius:5px}.mobile-a .m-state b{color:#8d5b38;font-weight:600}.mobile-a .m-runs{display:flex;align-items:center;justify-content:space-between;margin:13px 0 5px}.mobile-a .m-runs strong{font-size:14px}.mobile-a .m-runs span{font-size:12px;color:#6a767d}.mobile-a .m-run{background:#fff;border:1px solid #e2e6e1;border-bottom:0;padding:8px 9px;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:4px}.mobile-a .m-run:nth-last-child(2){border-bottom:1px solid #e2e6e1;border-radius:0 0 6px 6px}.mobile-a .m-run.first{border-radius:6px 6px 0 0}.mobile-a .m-run strong{font-size:12px;font-weight:600}.mobile-a .m-run small{display:block;color:#7a858b;font-size:12px}.mobile-a .m-run span{font-size:12px;font-weight:600;font-variant-numeric:tabular-nums}.mobile-a .m-more{text-align:right;color:#95592f;font-size:12px;margin-top:7px}
+</style>
+  <style>
+.demo-b,.demo-b *,.mobile-b,.mobile-b *{box-sizing:border-box}
+.demo-b{width:960px;height:560px;overflow:hidden;padding:22px 26px 18px;background:#11191d;color:#e6edf0;font:14px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;display:flex;flex-direction:column;gap:13px}
+.demo-b .b-top{height:48px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #354248;padding-bottom:14px;flex:none}
+.demo-b .b-crumb{font-size:12px;color:#9db0b8;letter-spacing:.02em}
+.demo-b .b-crumb b{color:#e6edf0;font-weight:600;margin-left:10px}
+.demo-b .b-top-right{display:flex;align-items:center;gap:14px;color:#b7c7cd;font-size:12px}
+.demo-b .b-state{border:1px solid #746848;color:#e4c88c;padding:4px 9px;border-radius:3px}
+.demo-b .b-control{border:1px solid #53646a;color:#d8e4e7;padding:5px 10px;border-radius:3px}
+.demo-b .b-lead{height:70px;display:flex;align-items:center;justify-content:space-between;flex:none}
+.demo-b .b-title{font-size:23px;font-weight:600;line-height:1.3;max-width:620px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.demo-b .b-lead-sub{color:#aabdc4;font-size:12px;margin-top:5px}
+.demo-b .b-hero-num{display:flex;align-items:baseline;gap:8px;color:#d9ebed;font:600 38px/1.1 "Consolas","SFMono-Regular",monospace;font-variant-numeric:tabular-nums;letter-spacing:-.04em}
+.demo-b .b-hero-num small{font:12px/1.5 -apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif;color:#9db0b8;letter-spacing:0}
+.demo-b .b-timeline{border:1px solid #3d4b50;background:#172226;height:229px;flex:none;padding:16px 18px 12px}
+.demo-b .b-timeline-head{display:flex;justify-content:space-between;align-items:baseline;height:31px}
+.demo-b .b-timeline-head strong,.demo-b .b-rank-head strong{font-weight:600;font-size:15px}
+.demo-b .b-timeline-head span{color:#aabdc4;font:12px "Consolas",monospace;font-variant-numeric:tabular-nums}
+.demo-b .b-axis,.demo-b .b-lane{display:grid;grid-template-columns:184px minmax(0,1fr) 86px;gap:14px;align-items:center}
+.demo-b .b-axis{height:28px;color:#a8b9bf;font:12px "Consolas",monospace;font-variant-numeric:tabular-nums}
+.demo-b .b-ticks{display:flex;justify-content:space-between}
+.demo-b .b-lane{height:57px;border-top:1px solid #354248}
+.demo-b .b-who{display:flex;flex-direction:column;line-height:1.38;min-width:0}
+.demo-b .b-who strong{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.demo-b .b-who small{font:12px "Consolas",monospace;color:#9fb3bb;margin-top:3px}
+.demo-b .b-track{height:31px;position:relative;border:1px solid #3d4c52;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(25% - 1px),#35444a calc(25% - 1px),#35444a 25%)}
+.demo-b .b-run{position:absolute;top:5px;height:19px;border-radius:2px;background:#80c3c3;color:#112024;text-align:center;font:600 12px/19px "Consolas",monospace;white-space:nowrap;overflow:hidden}
+.demo-b .b-run.long{left:0;width:99.6%}
+.demo-b .b-run.short{left:78%;width:8%;min-width:47px;background:#bbd0a5}
+.demo-b .b-times{color:#c4d4d9;text-align:right;font:12px/1.35 "Consolas",monospace;white-space:nowrap}
+.demo-b .b-times span{display:block;color:#9db0b8;font-family:-apple-system,BlinkMacSystemFont,"Microsoft YaHei",sans-serif}
+.demo-b .b-legend{display:flex;align-items:center;gap:18px;height:26px;color:#aebfc5;font-size:12px}
+.demo-b .b-legend i{display:inline-block;width:14px;height:9px;margin-right:6px;vertical-align:0;border-radius:1px;background:#80c3c3}
+.demo-b .b-legend .wait{background:transparent;border:1px dashed #d4b67b}
+.demo-b .b-legend .b-relation{margin-left:auto;color:#b5c7cb}
+.demo-b .b-rank{height:120px;border-top:1px solid #354248;padding-top:9px;flex:none}
+.demo-b .b-rank-head{display:flex;align-items:baseline;justify-content:space-between;margin-bottom:3px}
+.demo-b .b-rank-head span{color:#9eb1b9;font-size:12px}
+.demo-b .b-rank-row{height:27px;display:grid;grid-template-columns:26px 150px minmax(0,1fr) 75px;align-items:center;border-top:1px solid #29383d;gap:8px;font-size:12px}
+.demo-b .b-rank-row .idx{color:#8fa2a9;font:12px "Consolas",monospace}
+.demo-b .b-rank-row .kind{font-weight:600;white-space:nowrap}
+.demo-b .b-rank-row .where{color:#a6b8be;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.demo-b .b-rank-row .dur{color:#e8f0f1;text-align:right;font:600 13px "Consolas",monospace;font-variant-numeric:tabular-nums}
+.demo-b .b-rank-row .gap{color:#e3c48b}
+.mobile-b{width:320px;height:468px;overflow:hidden;padding:16px;background:#11191d;color:#e6edf0;font:13px/1.5 -apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif}
+.mobile-b .mb-top{display:flex;justify-content:space-between;align-items:center;color:#9fb4ba;font-size:12px;border-bottom:1px solid #39464b;padding-bottom:10px}
+.mobile-b .mb-top strong{color:#e6edf0;font-weight:600}
+.mobile-b h3{font-size:17px;line-height:1.4;margin:13px 0 4px;font-weight:600}
+.mobile-b .mb-sub{font-size:12px;color:#a9bbc1}
+.mobile-b .mb-stat{display:flex;align-items:baseline;gap:8px;margin:15px 0;color:#d7ecee}
+.mobile-b .mb-stat strong{font:600 32px "Consolas",monospace;font-variant-numeric:tabular-nums}
+.mobile-b .mb-stat span{font-size:12px;color:#aec0c5}
+.mobile-b .mb-axis{display:flex;justify-content:space-between;border-bottom:1px solid #415056;color:#a8bbc1;font:12px "Consolas",monospace;padding-bottom:5px}
+.mobile-b .mb-lane{padding:10px 0;border-bottom:1px solid #36444a}
+.mobile-b .mb-lane-top{display:flex;justify-content:space-between;gap:8px;font-size:12px}
+.mobile-b .mb-lane-top strong{font-weight:600}
+.mobile-b .mb-lane-top span{font-family:"Consolas",monospace;white-space:nowrap}
+.mobile-b .mb-track{height:20px;margin-top:7px;border:1px solid #46565b;position:relative;background:repeating-linear-gradient(90deg,transparent 0,transparent calc(50% - 1px),#35444a calc(50% - 1px),#35444a 50%)}
+.mobile-b .mb-bar{height:12px;position:absolute;top:3px;background:#80c3c3;border-radius:2px}
+.mobile-b .mb-bar.long{left:0;width:99%}.mobile-b .mb-bar.short{left:78%;width:8%;min-width:25px;background:#bbd0a5}
+.mobile-b .mb-note{font-size:12px;color:#aabcc2;margin:11px 0 13px}
+.mobile-b .mb-note i{display:inline-block;width:12px;height:8px;border:1px dashed #d4b67b;margin-right:5px}
+.mobile-b .mb-rank-title{font-weight:600;font-size:14px;border-top:1px solid #435158;padding-top:12px}
+.mobile-b .mb-rank{display:flex;justify-content:space-between;gap:8px;padding:7px 0;border-bottom:1px solid #334146;font-size:12px}
+.mobile-b .mb-rank span{color:#b3c4c8;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mobile-b .mb-rank strong{font:600 12px "Consolas",monospace;white-space:nowrap}
+</style>
+  <style>
+.demo-c,.demo-c *, .mobile-c,.mobile-c *{box-sizing:border-box}
+.demo-c{width:960px;height:560px;overflow:hidden;background:#f6f2e9;color:#332e27;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.5;display:grid;grid-template-rows:70px minmax(0,1fr)}
+.demo-c .c-head{display:flex;align-items:center;justify-content:space-between;padding:0 30px;border-bottom:1px solid #c9c0b2;background:#fbf8f1}
+.demo-c .c-brand{display:flex;align-items:baseline;gap:14px}
+.demo-c .c-brand strong{font-family:"Songti SC","STSong",serif;font-size:28px;font-weight:600;letter-spacing:.035em}
+.demo-c .c-brand span,.demo-c .c-head small{font-size:14px;color:#756b60}
+.demo-c .c-head small{font-variant-numeric:tabular-nums}
+.demo-c .c-body{min-height:0;display:grid;grid-template-columns:205px minmax(0,1fr) 225px}
+.demo-c .c-index{min-width:0;padding:29px 22px;border-right:1px solid #d7cfc3;background:#f1ebdf}
+.demo-c .c-eyebrow{display:block;color:#867868;font-size:12px;letter-spacing:.12em}
+.demo-c .c-index h3{font-family:"Songti SC","STSong",serif;font-size:22px;font-weight:600;line-height:1.25;margin:10px 0 26px}
+.demo-c .c-index-item{padding:13px 0;border-top:1px solid #d2c8b9}
+.demo-c .c-index-item:last-child{border-bottom:1px solid #d2c8b9}
+.demo-c .c-index-item b{display:block;font-size:15px;font-weight:600;margin-bottom:3px}
+.demo-c .c-index-item small{display:block;color:#746c62;font-size:13px;line-height:1.45}
+.demo-c .c-index-item.active b{color:#8b512f}
+.demo-c .c-center{min-width:0;padding:28px 33px 20px;display:flex;flex-direction:column}
+.demo-c .c-kicker{display:flex;align-items:center;gap:10px;color:#795a3e;font-size:13px;font-weight:600;letter-spacing:.03em}
+.demo-c .c-pill{padding:2px 8px;border:1px solid #b9977b;border-radius:3px;background:#efe1d2;color:#70432a;white-space:nowrap}
+.demo-c .c-center h2{font-family:"Songti SC","STSong",serif;font-size:38px;font-weight:600;line-height:1.2;letter-spacing:.02em;margin:16px 0 5px}
+.demo-c .c-subtitle{font-size:18px;color:#5b5146;margin:0}
+.demo-c .c-current{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:end;padding:23px 0 21px;margin-top:22px;border-top:2px solid #6d5c4d;border-bottom:1px solid #cfc5b7}
+.demo-c .c-current strong{display:block;font-size:21px;font-weight:600;line-height:1.35}
+.demo-c .c-current p{color:#665c51;font-size:14px;line-height:1.5;margin:7px 0 0;max-width:33ch}
+.demo-c .c-action{display:inline-flex;align-items:center;padding:9px 12px;background:#3d332b;color:#faf6ef;font-size:14px;font-weight:600;white-space:nowrap;border-radius:3px}
+.demo-c .c-recent{margin-top:auto}
+.demo-c .c-section-line{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}
+.demo-c .c-section-line strong{font-size:15px;font-weight:600}
+.demo-c .c-section-line span{font-size:12px;color:#796f63}
+.demo-c .c-run{display:grid;grid-template-columns:78px 1fr auto;gap:10px;align-items:center;padding:9px 0;border-top:1px solid #d5ccc0;font-size:13px}
+.demo-c .c-run time{color:#766c61;font-variant-numeric:tabular-nums}
+.demo-c .c-run b{font-size:14px;font-weight:600}
+.demo-c .c-run span:last-child{font-variant-numeric:tabular-nums;color:#4e6659;white-space:nowrap}
+.demo-c .c-side{min-width:0;padding:29px 20px;border-left:1px solid #d7cfc3;background:#fbf8f1;display:flex;flex-direction:column}
+.demo-c .c-side h3{font-family:"Songti SC","STSong",serif;font-size:24px;font-weight:600;line-height:1.25;margin:11px 0 20px}
+.demo-c .c-quote{padding:14px 0;border-top:1px solid #d8cec0;border-bottom:1px solid #d8cec0}
+.demo-c .c-quote p{margin:0 0 11px;font-size:17px;line-height:1.45;font-weight:600}
+.demo-c .c-quote small{font-size:12px;color:#786d61}
+.demo-c .c-source{display:block;color:#8b512f;font-size:13px;font-weight:600;margin-top:12px}
+.demo-c .c-archive{margin-top:auto;border:1px solid #cbbba8;background:#f2e9dc;border-radius:3px;padding:12px 13px}
+.demo-c .c-archive b{display:block;color:#684a35;font-size:15px;font-weight:600}
+.demo-c .c-archive small{display:block;color:#766757;font-size:12px;line-height:1.45;margin-top:5px}
+.demo-c .c-archive em{display:block;font-style:normal;color:#8b512f;font-size:13px;font-weight:600;margin-top:10px}
+.mobile-c,.mobile-c *{box-sizing:border-box}
+.mobile-c{width:320px;min-height:510px;background:#f6f2e9;color:#332e27;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:14px;line-height:1.5;overflow:hidden}
+.mobile-c .cm-head{height:58px;padding:14px 16px;border-bottom:1px solid #c9c0b2;background:#fbf8f1;display:flex;align-items:center;justify-content:space-between}
+.mobile-c .cm-head strong{font-family:"Songti SC","STSong",serif;font-size:21px;font-weight:600}
+.mobile-c .cm-head span{font-size:12px;color:#766a5f}
+.mobile-c .cm-body{padding:18px 16px 24px}
+.mobile-c .cm-overline{font-size:12px;color:#8b512f;font-weight:600;margin:0 0 8px}
+.mobile-c h2{font-family:"Songti SC","STSong",serif;font-size:27px;line-height:1.2;font-weight:600;margin:0 0 5px}
+.mobile-c .cm-sub{font-size:13px;color:#62584d;margin:0 0 15px}
+.mobile-c .cm-status{display:flex;gap:8px;align-items:center;padding:11px 0;border-top:2px solid #6d5c4d;border-bottom:1px solid #d2c8b9}
+.mobile-c .cm-status b{background:#efe1d2;border:1px solid #b9977b;border-radius:3px;padding:2px 6px;font-size:12px;color:#70432a;white-space:nowrap}
+.mobile-c .cm-status span{font-size:13px;color:#554e45}
+.mobile-c .cm-block{padding-top:15px}
+.mobile-c .cm-label{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:7px}
+.mobile-c .cm-label strong{font-size:15px;font-weight:600}
+.mobile-c .cm-label small{font-size:12px;color:#756b60}
+.mobile-c .cm-result{font-size:14px;margin:0 0 7px}
+.mobile-c .cm-result time{font-variant-numeric:tabular-nums;color:#756b60;font-size:12px;margin-right:6px}
+.mobile-c .cm-result b{font-weight:600}
+.mobile-c .cm-link{font-size:13px;color:#8b512f;font-weight:600}
+.mobile-c .cm-person{border-top:1px solid #d2c8b9;margin-top:15px;padding-top:14px}
+.mobile-c .cm-person p{font-size:14px;margin:7px 0;color:#4e453c}
+.mobile-c .cm-archive{margin-top:16px;background:#f2e9dc;border:1px solid #cbbba8;border-radius:3px;padding:10px 12px;display:flex;justify-content:space-between;gap:8px}
+.mobile-c .cm-archive strong{font-size:13px;color:#684a35;font-weight:600}
+.mobile-c .cm-archive span{font-size:12px;color:#8b512f;white-space:nowrap}
+</style>
+  <style>
+.demo-d{width:960px;height:560px;box-sizing:border-box;overflow:hidden;background:#e9eef2;color:#142a39;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:14px;line-height:1.5;display:flex;flex-direction:column}
+.demo-d *{box-sizing:border-box}.demo-d button{font:inherit;cursor:default}.demo-d .d-head{height:104px;padding:19px 24px 14px;background:#183548;color:#f2f8fa;display:flex;justify-content:space-between;align-items:flex-start;gap:24px}.demo-d .d-kicker{font:600 11px/1.2 Consolas,monospace;letter-spacing:.12em;color:#8bc4d5}.demo-d h3{margin:6px 0 0;font-size:23px;font-weight:600;letter-spacing:0}.demo-d .d-sub{margin-top:4px;color:#c7d9e1;font-size:12px}.demo-d .d-head-right{text-align:right;display:grid;gap:5px}.demo-d .d-head-right strong{font:600 24px/1 Consolas,monospace;letter-spacing:-.03em}.demo-d .d-head-right small{font-size:12px;color:#c7d9e1}.demo-d .d-status{align-self:start;display:inline-block;background:#dce9c5;color:#334421;border:1px solid #b9cc9d;border-radius:3px;font-size:12px;font-weight:600;padding:2px 8px}.demo-d .d-toolrow{height:52px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;background:#f8fafb;border-bottom:1px solid #c8d3da}.demo-d .d-toolrow strong{font-weight:600}.demo-d .d-toolrow span{color:#556b77;font-size:12px}.demo-d .d-toolrow button{border:1px solid #adbec8;background:#fff;color:#25465b;border-radius:4px;padding:5px 10px;font-size:12px}.demo-d .d-body{flex:1;display:grid;grid-template-columns:312px minmax(0,1fr);min-height:0}.demo-d .d-runrail{background:#f6f8f9;border-right:1px solid #c5d1d8;padding:16px 15px 0 24px}.demo-d .d-label{color:#5f7480;font-size:11px;font-weight:600;letter-spacing:.05em}.demo-d .d-runrail .d-rail-note{font-size:12px;color:#647883;margin:5px 0 12px}.demo-d .d-run{width:100%;border:1px solid #cdd9df;background:#fff;border-radius:5px;margin:0 0 9px;padding:12px;text-align:left;display:grid;gap:8px}.demo-d .d-run.selected{border:2px solid #3b6d87;background:#edf7fa;padding:11px}.demo-d .d-runhead{display:flex;justify-content:space-between;gap:8px;align-items:start}.demo-d .d-runhead strong{font-size:13px;line-height:1.35}.demo-d .d-runhead em{font-style:normal;font:600 15px/1.2 Consolas,monospace;white-space:nowrap}.demo-d .d-run small{color:#647883;font-size:11px}.demo-d .d-runfoot{display:flex;justify-content:space-between;gap:8px;color:#496474;font-size:11px}.demo-d .d-runfoot b{font-weight:600;color:#26725e}.demo-d .d-rail-bottom{border-top:1px solid #d2dce1;padding-top:12px;margin-top:18px;color:#536b78;font-size:12px;line-height:1.55}.demo-d .d-rail-bottom b{color:#183548}.demo-d .d-evidence{padding:18px 23px 0;min-width:0;display:flex;flex-direction:column;background:linear-gradient(90deg,transparent 23px,#d8e2e7 24px,transparent 25px) #eef3f5}.demo-d .d-evidence-top{display:flex;justify-content:space-between;align-items:start;gap:20px}.demo-d .d-evidence h4{font-size:18px;line-height:1.3;margin:5px 0 0;font-weight:600}.demo-d .d-evidence-top small{color:#526b78;font-size:11px}.demo-d .d-fact{margin-top:10px;border:1px solid #c7d4db;background:#f9fbfc;padding:9px 12px;display:flex;gap:14px;align-items:baseline;color:#294a5d;font-size:12px}.demo-d .d-fact b{font-weight:600;color:#173e54}.demo-d .d-rank-head{display:flex;align-items:baseline;justify-content:space-between;margin:15px 0 8px}.demo-d .d-rank-head strong{font-size:13px}.demo-d .d-rank-head span{font-size:11px;color:#617781}.demo-d .d-segment{display:grid;grid-template-columns:24px 138px minmax(0,1fr) 60px;gap:10px;align-items:center;min-height:55px;border-top:1px solid #cbd8de}.demo-d .d-segment .n{font:600 12px Consolas,monospace;color:#6d8490}.demo-d .d-segment .name{font-weight:600;font-size:12px}.demo-d .d-segment .name small{font-weight:400;color:#637b87;display:block;font-size:10px}.demo-d .d-track{height:12px;background:#dce7ec;position:relative}.demo-d .d-track span{display:block;height:100%;background:#30889e}.demo-d .d-segment.gap .d-track span{background:#d68b56}.demo-d .d-segment.tool .d-track span{background:#6d8d60}.demo-d .d-segment .time{text-align:right;font:600 13px Consolas,monospace}.demo-d .d-evidence-foot{margin-top:auto;border-top:1px solid #c7d4db;display:flex;justify-content:space-between;padding:10px 0 13px;color:#5c7280;font-size:11px}.demo-d .d-evidence-foot b{font-weight:600;color:#245776}
+</style>
+<style>
+.mobile-d{display:none;box-sizing:border-box;background:#e9eef2;color:#183548;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:12px;line-height:1.5}.mobile-d *{box-sizing:border-box}.mobile-d .md-head{background:#183548;color:#f3f8fa;padding:14px}.mobile-d .md-head small{display:block;color:#8bc4d5;font:600 11px Consolas,monospace;letter-spacing:.08em}.mobile-d .md-head strong{display:block;font-size:15px;margin-top:4px}.mobile-d .md-main{padding:12px}.mobile-d .md-run{border:2px solid #3b6d87;background:#f5fbfd;padding:8px 10px;display:flex;justify-content:space-between;gap:10px}.mobile-d .md-run strong{font-size:12px}.mobile-d .md-run span{font:600 13px Consolas,monospace}.mobile-d .md-note{font-size:11px;color:#5f7480;margin:7px 0 11px}.mobile-d .md-title{font-weight:600;font-size:13px;margin:0 0 7px}.mobile-d .md-line{display:grid;grid-template-columns:72px 1fr 35px;align-items:center;gap:8px;padding:6px 0;border-top:1px solid #cbd8de}.mobile-d .md-line i{display:block;height:7px;background:#30889e;font-style:normal}.mobile-d .md-line.gap i{background:#d68b56}.mobile-d .md-line.tool i{background:#6d8d60}.mobile-d .md-line b{text-align:right;font:600 11px Consolas,monospace}.mobile-d .md-foot{font-size:11px;color:#4d6d7f;margin-top:8px}
+</style>
+</head>
+<body>
+  <!-- QIAOMU_DESIGN_PREVIEW_BRIDGE: selection is managed by this self-contained page -->
+  <header class="topbar"><strong>Multica · 任务监控重构</strong><div class="top-meta"><span>方向样机，不是最终插件</span><span class="reply" id="return-state">用于讨论结构</span><span>快捷键 1–4</span></div></header>
+  <section class="intro"><div><h1>一个任务入口，一条证据路径</h1><p>当前调用图、时间线、运行列表和任务对话反复呈现同一批运行。下面四种结构尝试减少切换，同时保留关系、人员回复和原始证据。</p><div class="path" aria-label="目标阅读路径"><span>定位任务</span><i>→</i><span>找到耗时或卡点的运行</span><i>→</i><span>查看片段与证据</span><span class="secondary">关系 / 人员回复按需看</span></div></div><div class="scope"><b>静态示意数据</b>用于讨论信息层级，不代表当前运行状态。</div></section>
+  <section class="dials" data-qmdp-dials aria-label="设计拨盘"><label class="dial"><strong>视觉冒险度</strong><output data-qmdp-output="variance">4</output><input data-qmdp-dial="variance" id="variance" type="range" min="1" max="10" value="4"><small>越高，布局越大胆；不改变监控事实。</small></label><label class="dial"><strong>动效强度</strong><output data-qmdp-output="motion">2</output><input data-qmdp-dial="motion" id="motion" type="range" min="1" max="10" value="2"><small>越高，切换和反馈越明显。</small></label><label class="dial"><strong>信息密度</strong><output data-qmdp-output="density">7</output><input data-qmdp-dial="density" id="density" type="range" min="1" max="10" value="7"><small>越高，同屏可读的信息越多。</small></label></section>
+  <main class="grid" aria-label="四个任务监控方向">
+    <article class="option" data-design-option="A" data-name="关注优先清单" data-notes="任务列表是唯一入口；选中后在同屏查看运行，证据继续下钻。"><div class="option-head"><div class="option-name"><span class="letter">A</span><h2>关注优先清单</h2></div><span class="rec">推荐</span></div><div class="mock"><div class="stage-shell"><div class="demo-a" aria-label="方向 A：关注优先清单静态样机">
+  <header class="a-top"><div class="a-brand"><span class="a-brand-mark">◆</span>任务监控<small>cx_test_new</small></div><div class="a-sync"><b>当前需关注 0</b>　·　最近同步 15:53</div></header>
+  <div class="a-main">
+    <aside class="a-queue">
+      <div class="a-queue-heading"><h3>业务任务</h3><span class="a-muted">已加载 10 个</span></div>
+      <div class="a-search"><span class="a-search-icon">⌕</span>搜索任务名称或编号</div>
+      <div class="a-filter"><span class="active">全部</span><span>需关注</span><span>有历史失败</span></div>
+      <div class="a-section-title"><span>待审核</span><span>3</span></div>
+      <div class="a-task selected"><div><strong>CXTE-4 · 需求澄清与拆解</strong><small>V2 传输加密迁移</small></div><em>曾失败</em></div>
+      <div class="a-task"><div><strong>CXTE-9 · 需求评审</strong><small>门禁 G1 · 2 次运行</small></div></div>
+      <div class="a-task"><div><strong>CXTE-1 · 运行时环境检测</strong><small>4 次历史失败</small></div><em>曾失败</em></div>
+      <div class="a-section-title other"><span>其他任务</span><span>7</span></div>
+      <div class="a-task"><div><strong>CXTE-3 · 加密功能迁移</strong><small>处理中 · 当前无活动运行</small></div><em class="neutral">处理中</em></div>
+      <div class="a-task"><div><strong>CXTE-5 · 技术方案设计</strong><small>待规划 · 尚无运行</small></div></div>
+    </aside>
+    <main class="a-detail">
+      <div class="a-detail-top"><span>业务任务 / CXTE-4</span><span class="a-open">在 Multica 打开 ↗</span></div>
+      <div class="a-identity"><div><div class="a-id">CXTE-4</div><h2>需求澄清与拆解</h2><p>V2 传输加密迁移（demo_new）</p></div><span class="a-business">待审核</span></div>
+      <div class="a-state"><span><i class="a-dot"></i><strong>当前无活动运行</strong></span><span>9 次运行</span><span class="a-history">4 次历史失败</span></div>
+      <div class="a-run-heading"><h3>运行<small>选一条查看输入、输出与耗时证据</small></h3><div class="a-run-actions"><span>按耗时排序 ▾</span><b class="a-graph">查看调用关系 ↗</b></div></div>
+      <div class="a-run-table">
+        <div class="a-cols"><span>智能体 / 运行</span><span>状态</span><span>执行耗时</span><span style="text-align:right">证据</span></div>
+        <div class="a-run"><span class="a-agent">需求文档拆解分析师<small>#d1701910 · 11/03 14:02</small></span><span class="a-status">已完成</span><span class="a-time" style="--w:calc(100% - 17px)">20 分 44 秒</span><span class="a-evidence">查看证据 →</span></div>
+        <div class="a-run"><span class="a-agent">需求文档拆解分析师<small>#577aac5c · 11/03 16:34</small></span><span class="a-status">已完成</span><span class="a-time" style="--w:55%">11 分 33 秒</span><span class="a-evidence muted">查看 →</span></div>
+        <div class="a-run"><span class="a-agent">需求文档拆解分析师<small>#f90edb5d · 10/30 14:48</small></span><span class="a-status failed">历史失败</span><span class="a-time" style="--w:39%">8 分 10 秒</span><span class="a-evidence muted">查看 →</span></div>
+        <div class="a-run"><span class="a-agent">项目经理<small>#94b3fc12 · 11/03 16:46</small></span><span class="a-status">已完成</span><span class="a-time" style="--w:28%">5 分 54 秒</span><span class="a-evidence muted">查看 →</span></div>
+        <div class="a-run"><span class="a-agent">项目经理<small>#e451fb6a · 11/03 14:27</small></span><span class="a-status">已完成</span><span class="a-time" style="--w:22%">4 分 37 秒</span><span class="a-evidence muted">查看 →</span></div>
+      </div>
+      <div class="a-table-foot"><span>显示 5 / 9 次；历史失败不代表当前故障</span><strong>查看全部运行 →</strong></div>
+    </main>
+  </div>
+</div>
+<div class="mobile-a" aria-label="方向 A：关注优先清单手机样机">
+  <div class="m-head"><strong>任务监控</strong><span>当前需关注 0</span></div>
+  <div class="m-main">
+    <div class="m-heading"><h3>业务任务</h3><span>已加载 10 个</span></div>
+    <div class="m-task selected"><div><strong>CXTE-4 · 需求澄清与拆解</strong><small>待审核 · V2 传输加密迁移</small></div><em>曾失败</em></div>
+    <div class="m-task"><div><strong>CXTE-9 · 需求评审</strong><small>待审核 · 门禁 G1</small></div></div>
+    <div class="m-divider"></div>
+    <div class="m-issue">CXTE-4 / 待审核</div><h2>需求澄清与拆解</h2><div class="m-sub">9 次运行 · 2 名智能体</div>
+    <div class="m-state">当前无活动运行　·　<b>4 次历史失败</b></div>
+    <div class="m-runs"><strong>运行</strong><span>按耗时排序 ▾</span></div>
+    <div class="m-run first"><div><strong>需求文档拆解分析师</strong><small>#d1701910 · 已完成</small></div><span>20 分 44 秒</span></div>
+    <div class="m-run"><div><strong>需求文档拆解分析师</strong><small>#577aac5c · 已完成</small></div><span>11 分 33 秒</span></div>
+    <div class="m-run"><div><strong>需求文档拆解分析师</strong><small>#f90edb5d · 历史失败</small></div><span>8 分 10 秒</span></div>
+    <div class="m-more">查看全部运行与证据 →</div>
+  </div>
+</div></div></div><div class="meta"><p>先找需要看的任务，再在同一视图扫运行；关系和日志只在需要时打开。</p><button class="qmdp-pick-button" data-qmdp-managed="page" type="button">选择 A · 关注优先清单</button></div></article>
+    <article class="option" data-design-option="B" data-name="时间脊柱" data-notes="以同刻度的运行时间线为主画布；任务切换收进顶部。"><div class="option-head"><div class="option-name"><span class="letter">B</span><h2>时间脊柱</h2></div><span class="tag">时间优先</span></div><div class="mock"><div class="stage-shell"><div class="demo-b">
+  <div class="b-top"><div class="b-crumb">任务监控 <b>CXTE-9</b></div><div class="b-top-right"><span class="b-state">待审核</span><span>当前无活动运行</span><span class="b-control">切换任务 ▾</span></div></div>
+  <div class="b-lead"><div><div class="b-title">CXTE-3 需求评审（门禁 G1）</div><div class="b-lead-sub">2 次运行 · 2 名智能体 · 已观测区间 11/03 16:38—17:18</div></div><div class="b-hero-num">39:59 <small>最长运行</small></div></div>
+  <section class="b-timeline" aria-label="任务运行时间轴示意"><div class="b-timeline-head"><strong>同一时钟下的运行</strong><span>11/03 16:38—17:18 · 北京时间</span></div><div class="b-axis"><span>智能体 / 运行</span><div class="b-ticks"><span>16:38</span><span>16:48</span><span>16:58</span><span>17:08</span><span>17:18</span></div><span style="text-align:right">执行</span></div><div class="b-lane"><div class="b-who"><strong>需求评审员</strong><small>#e11a970f · 已完成</small></div><div class="b-track"><span class="b-run long">39:59</span></div><div class="b-times">39:59<span>等待 0:00</span></div></div><div class="b-lane"><div class="b-who"><strong>项目经理</strong><small>#07aa441a · 已完成</small></div><div class="b-track"><span class="b-run short"></span></div><div class="b-times">3:02<span>等待 0:00</span></div></div><div class="b-legend"><span><i></i>执行区间</span><span><i class="wait"></i>启动等待</span><span class="b-relation">暂无确认的调用关系 · 时间先后不代表委派</span></div></section>
+  <section class="b-rank" aria-label="最长记录跨度示意"><div class="b-rank-head"><strong>39:59 运行的最长记录跨度</strong><span>点选后看相邻原文与工具证据</span></div><div class="b-rank-row"><span class="idx">01</span><span class="kind gap">无日志间隔</span><span class="where">文字输出 → write 工具调用；原因待核实</span><span class="dur">2:14</span></div><div class="b-rank-row"><span class="idx">02</span><span class="kind">工具 · shell</span><span class="where">读取评审材料与执行结果</span><span class="dur">1:48</span></div><div class="b-rank-row"><span class="idx">03</span><span class="kind">思考输出</span><span class="where">需求条款核对过程</span><span class="dur">1:26</span></div></section>
+</div>
+<div class="mobile-b">
+  <div class="mb-top"><strong>任务监控 · CXTE-9</strong><span>待审核</span></div>
+  <h3>CXTE-3 需求评审（门禁 G1）</h3><div class="mb-sub">2 次运行 · 11/03 16:38—17:18</div>
+  <div class="mb-stat"><strong>39:59</strong><span>最长运行 · 已完成</span></div>
+  <div class="mb-axis"><span>16:38</span><span>16:58</span><span>17:18</span></div>
+  <div class="mb-lane"><div class="mb-lane-top"><strong>需求评审员</strong><span>执行 39:59</span></div><div class="mb-track"><span class="mb-bar long"></span></div></div>
+  <div class="mb-lane"><div class="mb-lane-top"><strong>项目经理</strong><span>执行 3:02</span></div><div class="mb-track"><span class="mb-bar short"></span></div></div>
+  <div class="mb-note"><i></i>本任务无启动等待；时间先后不代表调用。</div>
+  <div class="mb-rank-title">最长记录跨度 · 前 3</div>
+  <div class="mb-rank"><span>无日志间隔 · 原因待核实</span><strong>2:14</strong></div>
+  <div class="mb-rank"><span>工具 · shell</span><strong>1:48</strong></div>
+  <div class="mb-rank"><span>思考输出</span><strong>1:26</strong></div>
+</div></div></div><div class="meta"><p>把“等了多久、运行多久、何时重叠”放在同一时间刻度上。</p><button class="qmdp-pick-button" data-qmdp-managed="page" type="button">选择 B · 时间脊柱</button></div></article>
+    <article class="option" data-design-option="C" data-name="待办卷宗" data-notes="按当前待处理、最近明确结果、历史失败分层；人员回复只留来源。"><div class="option-head"><div class="option-name"><span class="letter">C</span><h2>待办卷宗</h2></div><span class="tag">决策优先</span></div><div class="mock"><div class="stage-shell"><div class="demo-c">
+  <header class="c-head"><div class="c-brand"><strong>任务监控</strong><span>待办卷宗</span></div><small>cx_test_new　/　11 月 03 日 17:18</small></header>
+  <div class="c-body">
+    <aside class="c-index"><span class="c-eyebrow">工作顺序</span><h3>先处理当前，<br>再翻历史。</h3><div class="c-index-item active"><b>业务待审核</b><small>CXTE-4 · 需求澄清与拆解</small></div><div class="c-index-item"><b>运行状态</b><small>当前无活动运行</small></div><div class="c-index-item"><b>历史记录</b><small>4 次已结束的失败</small></div></aside>
+    <main class="c-center"><div class="c-kicker"><span>CXTE-4</span><span class="c-pill">待审核</span></div><h2>需求澄清与拆解</h2><p class="c-subtitle">V2 传输加密迁移</p><div class="c-current"><div><strong>当前没有活动运行</strong><p>这项任务停在业务审核；监控未发现正在执行的智能体运行。</p></div><span class="c-action">在 Multica 查看 ↗</span></div><section class="c-recent"><div class="c-section-line"><strong>最近明确结果</strong><span>按运行开始时间</span></div><div class="c-run"><time>11/03 16:46</time><b>项目经理 · 已完成</b><span>5 分 54 秒</span></div><div class="c-run"><time>11/03 16:34</time><b>需求文档拆解分析师 · 已完成</b><span>11 分 33 秒</span></div></section></main>
+    <aside class="c-side"><span class="c-eyebrow">人员参与</span><h3>最近一次回复</h3><div class="c-quote"><p>“C-1 推荐，C-2 推荐”</p><small>chenxing.java · 11/03 16:34</small><span class="c-source">查看原评论 ↗</span></div><div class="c-archive"><b>历史失败 · 4 次</b><small>均已结束；用于追查原因，不表示当前故障。</small><em>展开历史证据 ▾</em></div></aside>
+  </div>
+</div>
+<div class="mobile-c">
+  <header class="cm-head"><strong>任务监控</strong><span>cx_test_new</span></header>
+  <div class="cm-body"><p class="cm-overline">CXTE-4　·　业务待审核</p><h2>需求澄清与拆解</h2><p class="cm-sub">V2 传输加密迁移</p><div class="cm-status"><b>待审核</b><span>当前无活动运行</span></div><section class="cm-block"><div class="cm-label"><strong>最近明确结果</strong><small>2 次已完成</small></div><p class="cm-result"><time>16:46</time><b>项目经理</b> · 5 分 54 秒</p><p class="cm-result"><time>16:34</time><b>需求文档拆解分析师</b> · 11 分 33 秒</p><span class="cm-link">查看运行证据 ↗</span></section><section class="cm-person"><div class="cm-label"><strong>人员参与</strong><small>11/03 16:34</small></div><p>“C-1 推荐，C-2 推荐”</p><span class="cm-link">查看原评论 ↗</span></section><div class="cm-archive"><strong>历史失败 · 4 次</strong><span>展开证据 ▾</span></div></div>
+</div></div></div><div class="meta"><p>先看业务是否要人处理；历史失败和人员回复退到上下文层。</p><button class="qmdp-pick-button" data-qmdp-managed="page" type="button">选择 C · 待办卷宗</button></div></article>
+    <article class="option" data-design-option="D" data-name="证据剖面" data-notes="选中运行直接呈现最长片段和原始证据入口，减少二次切换。"><div class="option-head"><div class="option-name"><span class="letter">D</span><h2>证据剖面</h2></div><span class="tag">耗时优先</span></div><div class="mock"><div class="stage-shell"><div class="demo-d">
+  <header class="d-head"><div><div class="d-kicker">TASK / RUN / EVIDENCE</div><h3>CXTE-9 · 需求评审门禁</h3><div class="d-sub">当前无活动运行 · 最近一次运行已完成</div></div><div class="d-head-right"><span class="d-status">业务待审核</span><strong>39:59</strong><small>本任务最长运行 · 11/03</small></div></header>
+  <div class="d-toolrow"><div><strong>2 次运行</strong><span>　·　选中运行后直接查看耗时证据</span></div><button type="button">关系来源：未确认　→</button></div>
+  <div class="d-body"><aside class="d-runrail"><div class="d-label">运行记录</div><div class="d-rail-note">按开始时间排列，时间与状态均来自运行记录</div><button type="button" class="d-run selected"><span class="d-runhead"><strong>需求评审员</strong><em>39:59</em></span><small>#e11a970f · 11/03 16:38 — 17:18</small><span class="d-runfoot"><b>已完成</b><span>查看证据　→</span></span></button><button type="button" class="d-run"><span class="d-runhead"><strong>项目经理</strong><em>03:02</em></span><small>#07aa441a · 11/03 17:08 — 17:11</small><span class="d-runfoot"><b>已完成</b><span>查看证据　→</span></span></button><div class="d-rail-bottom"><b>人员回复</b>　1 条已关联评论<br>评论只显示摘要，原文在任务来源中查看。</div></aside>
+    <section class="d-evidence"><div class="d-evidence-top"><div><div class="d-label">选中运行 / #e11a970f</div><h4>这 39 分 59 秒花在了哪里</h4></div><small>2886 条原始日志</small></div><div class="d-fact"><b>最近确认</b><span>收到文字反馈 · 17:18:49</span></div><div class="d-rank-head"><strong>跨度最长的 3 个片段</strong><span>按记录跨度排序 · 可继续查看至前 20</span></div><div class="d-segment gap"><span class="n">01</span><span class="name">无日志间隔<small>原因待核实</small></span><span class="d-track"><span style="width:94%"></span></span><span class="time">2:14</span></div><div class="d-segment"><span class="n">02</span><span class="name">思考输出<small>查看前后原文</small></span><span class="d-track"><span style="width:76%"></span></span><span class="time">1:48</span></div><div class="d-segment tool"><span class="n">03</span><span class="name">工具调用 · shell<small>查看输入与返回</small></span><span class="d-track"><span style="width:61%"></span></span><span class="time">1:26</span></div><div class="d-evidence-foot"><span>条长只表示日志记录跨度；不同类型可能重叠，不能相加。</span><b>查看本轮输入、正式输出和原始证据　→</b></div></section></div>
+</div>
+
+<div class="mobile-d"><div class="md-head"><small>TASK / RUN / EVIDENCE</small><strong>CXTE-9 · 需求评审门禁</strong></div><div class="md-main"><div class="md-run"><strong>需求评审员 · 已完成</strong><span>39:59</span></div><div class="md-note">运行 #e11a970f · 2886 条原始日志</div><p class="md-title">跨度最长的 3 个片段</p><div class="md-line gap"><span>无日志间隔</span><i style="width:94%"></i><b>2:14</b></div><div class="md-line"><span>思考输出</span><i style="width:76%"></i><b>1:48</b></div><div class="md-line tool"><span>工具 · shell</span><i style="width:61%"></i><b>1:26</b></div><div class="md-foot">记录跨度不可相加 · 查看原始证据 →</div></div></div></div></div><div class="meta"><p>选中长运行，立即看到前三个记录跨度；关系来源独立按需查看。</p><button class="qmdp-pick-button" data-qmdp-managed="page" type="button">选择 D · 证据剖面</button></div></article>
+  </main>
+  <section class="rationale" aria-label="方向差异"><h2>这四种结构各解决什么</h2><div class="comparison"><div class="row"><span>方向</span><span>最先回答</span><span>收起的重复入口</span><span>代价</span></div><div class="row recommend"><strong>A · 推荐</strong><span>哪项任务值得马上打开？</span><span>运行列表与时间线合为任务内单一运行视图</span><span>大规模并行需再打开时间视图</span></div><div class="row"><strong>B</strong><span>运行与等待在什么时候发生？</span><span>运行列表并入同刻度时间行</span><span>多任务巡检不如 A 快</span></div><div class="row"><strong>C</strong><span>现在是谁需要处理什么？</span><span>状态、提醒与人员回复改为一份任务卷宗</span><span>精细耗时需再进入运行</span></div><div class="row"><strong>D</strong><span>这次长运行最耗时的片段在哪？</span><span>运行详情的多层标签收成一条证据链</span><span>首屏任务范围比 A 小</span></div></div></section>
+  <p class="closing"><b>推荐 A 作主结构：</b>任务巡检路径最短。D 的“最长片段”适合作为点开单次运行后的下一层；调用关系仅在服务端有明确来源时出现。你也可以选择混搭，说明想保留哪一块。</p>
+  <div class="confirm" id="confirm" role="dialog" aria-modal="true" aria-labelledby="confirm-title"><div class="dialog"><h2 id="confirm-title">确认讨论方向</h2><p id="confirm-meta"></p><label for="adjustments">想调整的地方（可选）</label><textarea id="adjustments" placeholder="例如：用 A 的任务列表，加 D 的耗时证据"></textarea><div class="dialog-actions"><button type="button" id="cancel-pick">返回预览</button><button class="submit" type="button" id="confirm-pick">确认并回传</button></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script>
+    const cards=[...document.querySelectorAll('.option')];
+    const dialog=document.getElementById('confirm');
+    const toast=document.getElementById('toast');
+    let pending=null,returnFocus=null;
+    function resizeStages(){document.querySelectorAll('.mock').forEach(mock=>{const stage=mock.querySelector('.stage-shell');stage.style.setProperty('--stage-scale',Math.min(mock.clientWidth/960,mock.clientHeight/560));});}
+    new ResizeObserver(resizeStages).observe(document.querySelector('.grid'));
+    window.addEventListener('resize',resizeStages);
+    resizeStages();
+    document.querySelectorAll('[data-qmdp-dial]').forEach(input=>{const output=document.querySelector('[data-qmdp-output="'+input.dataset.qmdpDial+'"]');const sync=()=>{output.value=input.value;output.textContent=input.value;};input.addEventListener('input',sync);sync();});
+    function dials(){return {variance:Number(document.getElementById('variance').value),motion:Number(document.getElementById('motion').value),density:Number(document.getElementById('density').value)};}
+    function openConfirm(card,trigger){pending={id:card.dataset.designOption,name:card.dataset.name,label:'选 '+card.dataset.designOption+'：'+card.dataset.name,notes:card.dataset.notes};returnFocus=trigger||document.activeElement;document.getElementById('confirm-meta').textContent=pending.label+' · 视觉冒险度 '+dials().variance+' / 动效强度 '+dials().motion+' / 信息密度 '+dials().density;dialog.classList.add('open');document.getElementById('adjustments').focus();}
+    function closeConfirm(){dialog.classList.remove('open');pending=null;returnFocus?.focus?.();}
+    cards.forEach(card=>{card.querySelector('.qmdp-pick-button').addEventListener('click',()=>openConfirm(card,card.querySelector('.qmdp-pick-button')));card.querySelector('.mock').addEventListener('click',()=>openConfirm(card,card.querySelector('.qmdp-pick-button')));});
+    document.getElementById('cancel-pick').addEventListener('click',closeConfirm);
+    dialog.addEventListener('click',event=>{if(event.target===dialog)closeConfirm();});
+    document.addEventListener('keydown',event=>{if(dialog.classList.contains('open')){if(event.key==='Escape'){closeConfirm();return;}if(event.key==='Tab'){const focusable=[document.getElementById('adjustments'),document.getElementById('cancel-pick'),document.getElementById('confirm-pick')];const index=focusable.indexOf(document.activeElement);if(event.shiftKey&&index===0){event.preventDefault();focusable.at(-1).focus();}else if(!event.shiftKey&&index===focusable.length-1){event.preventDefault();focusable[0].focus();}}return;}if(event.target.matches('input,textarea,select'))return;const index=['1','2','3','4'].indexOf(event.key);if(index>-1){event.preventDefault();openConfirm(cards[index],cards[index].querySelector('.qmdp-pick-button'));}});
+    function showToast(message){toast.textContent=message;toast.classList.add('show');}
+    document.getElementById('confirm-pick').addEventListener('click',async()=>{if(!pending)return;const payload={...pending,dials:dials(),adjustments:document.getElementById('adjustments').value.trim(),at:new Date().toISOString()};const selected=cards.find(card=>card.dataset.designOption===pending.id);dialog.classList.remove('open');cards.forEach(card=>card.classList.toggle('selected',card===selected));try{if(location.protocol==='file:')throw new Error('file');const response=await fetch('/api/select',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});const result=await response.json();if(!response.ok||!result.ok)throw new Error('save');document.getElementById('return-state').textContent='已回传 '+payload.id;showToast('已选择 '+payload.id+' · '+payload.name+'，已回传。');}catch(error){const message=payload.label+'；拨盘：'+payload.dials.variance+'/'+payload.dials.motion+'/'+payload.dials.density+(payload.adjustments?'；建议：'+payload.adjustments:'');try{await navigator.clipboard.writeText(message);}catch{}document.getElementById('return-state').textContent='请在对话中回复';showToast('当前未能自动回传，请在对话中回复：'+message);}pending=null;});
+  </script>
+</body>
+</html>

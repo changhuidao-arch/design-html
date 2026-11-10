@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {readFile,writeFile} from 'node:fs/promises';
+import {buildRunWaterfall} from './src/run-waterfall.mjs';
+import {waterfallSearchIndex,waterfallView} from './src/waterfall-view.mjs';
+const s=JSON.parse(await readFile('snapshot.json','utf8'));
+const issue=Object.values(s.issues).find(x=>x.issue.identifier==='CXTE-9');
+const run=issue.runs.find(x=>x.id.endsWith('e11a970f'));
+const data=buildRunWaterfall({run,messages:s.messages[run.id].messages,partial:false});
+const index=waterfallSearchIndex(data.rows);
+const all=waterfallView(data.rows,{index});assert.equal(all.typed.length,1025);assert.equal(all.visible.length,20);
+const tools=waterfallView(data.rows,{index,kind:'tool',mode:'sequence'});assert.equal(tools.matches.length,186);assert.equal(tools.pages,5);assert.equal(tools.visible.length,40);
+const tail=tools.matches.at(-1);assert.ok(!tools.visible.some(r=>r.id===tail.id));
+const searched=waterfallView(data.rows,{index,kind:'tool',query:tail.id});assert.ok(searched.visible.some(r=>r.id===tail.id),'Search must find a tool outside the first page');
+const pages=Array.from({length:tools.pages},(_,page)=>waterfallView(data.rows,{index,kind:'tool',mode:'sequence',page}).visible).flat();assert.equal(new Set(pages.map(r=>r.id)).size,186);
+assert.equal(waterfallView(data.rows,{index,query:'不存在的片段XYZ'}).visible.length,0);
+const result={rawLogs:2886,completeSearchScope:1025,toolRecords:186,renderBatchLimit:40,offPageSearchPassed:true,allToolBatchesCovered:true,noResultsPassed:true,manualChecks:'see waterfall-usability/REVIEW.md'};
+await writeFile('waterfall-usability/data-verification.json',JSON.stringify(result,null,2));console.log(JSON.stringify(result));

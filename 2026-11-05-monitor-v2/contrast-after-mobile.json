@@ -1,0 +1,1816 @@
+{
+  "samples": [
+    {
+      "bg": [
+        234,
+        241,
+        252
+      ],
+      "color": "rgb(28, 68, 129)",
+      "ratio": 8.43,
+      "selector": "button.",
+      "size": "11px",
+      "text": "任务监控",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(77, 95, 119)",
+      "ratio": 6.14,
+      "selector": "button.",
+      "size": "11px",
+      "text": "异常提醒",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(77, 95, 119)",
+      "ratio": 6.14,
+      "selector": "button.",
+      "size": "11px",
+      "text": "执行性能",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(77, 95, 119)",
+      "ratio": 6.14,
+      "selector": "button.",
+      "size": "11px",
+      "text": "运行时",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "p.v2-breadcrumb",
+      "size": "10px",
+      "text": "工作区 / cx_test_new / 任务详情",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "h1.",
+      "size": "18px",
+      "text": "任务运行详情",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(85, 103, 127)",
+      "ratio": 5.78,
+      "selector": "button.",
+      "size": "10px",
+      "text": "连接信息",
+      "visible": true
+    },
+    {
+      "bg": [
+        36,
+        99,
+        209
+      ],
+      "color": "rgb(255, 255, 255)",
+      "ratio": 5.55,
+      "selector": "a.v2-original",
+      "size": "10px",
+      "text": "对照原版 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.",
+      "size": "10px",
+      "text": "cx_test_new",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.mm-muted",
+      "size": "12px",
+      "text": "静态快照 · 刷新仅重放已有数据",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "label.mm-workspace",
+      "size": "10px",
+      "text": "工作区选择工作区cx_testcx_test_newAutoProjectharping",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "button.",
+      "size": "13px",
+      "text": "重载快照",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(36, 99, 209)",
+      "ratio": 5.42,
+      "selector": "button.mm-task-back",
+      "size": "12px",
+      "text": "返回任务列表",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "label.",
+      "size": "11px",
+      "text": "业务任务CXTE-9 · CXTE-3 需求评审（门禁 G1）CXTE-4 · CXTE-3 需求澄清与拆解：V2 传输加密迁移（",
+      "visible": true
+    },
+    {
+      "bg": [
+        244,
+        246,
+        249
+      ],
+      "color": "rgb(83, 97, 119)",
+      "ratio": 5.8,
+      "selector": "span.mm-badge",
+      "size": "11px",
+      "text": "待审核",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(36, 99, 209)",
+      "ratio": 5.55,
+      "selector": "a.",
+      "size": "12px",
+      "text": "在 Multica 打开",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.31,
+      "selector": "span.",
+      "size": "11px",
+      "text": "9 次运行",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.31,
+      "selector": "span.",
+      "size": "11px",
+      "text": "2 名智能体",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.31,
+      "selector": "summary.",
+      "size": "12px",
+      "text": "任务层级 · 有父任务 · 无业务子任务",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.13,
+      "selector": "h3.",
+      "size": "15px",
+      "text": "业务任务层级",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.8,
+      "selector": "span.mm-task-relation-label",
+      "size": "11px",
+      "text": "父任务",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.8,
+      "selector": "span.mm-task-node-key",
+      "size": "11px",
+      "text": "CXTE-3",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.13,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "加密功能迁移",
+      "visible": true
+    },
+    {
+      "bg": [
+        242,
+        245,
+        249
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.44,
+      "selector": "span.mm-task-node-key",
+      "size": "11px",
+      "text": "CXTE-4当前任务",
+      "visible": true
+    },
+    {
+      "bg": [
+        242,
+        245,
+        249
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.25,
+      "selector": "span.",
+      "size": "11px",
+      "text": "当前任务",
+      "visible": true
+    },
+    {
+      "bg": [
+        242,
+        245,
+        249
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.25,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "CXTE-3 需求澄清与拆解：V2 传输加密迁移（demo_new）",
+      "visible": true
+    },
+    {
+      "bg": [
+        242,
+        245,
+        249
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.44,
+      "selector": "small.",
+      "size": "11px",
+      "text": "阶段 1",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.8,
+      "selector": "p.mm-task-coverage",
+      "size": "12px",
+      "text": "此任务没有业务子任务；下方各次运行都属于当前任务。",
+      "visible": true
+    },
+    {
+      "bg": [
+        246,
+        249,
+        253
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.72,
+      "selector": "strong.",
+      "size": "12px",
+      "text": "当前没有活动运行",
+      "visible": true
+    },
+    {
+      "bg": [
+        246,
+        249,
+        253
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.63,
+      "selector": "span.",
+      "size": "12px",
+      "text": "另有 4 次历史失败",
+      "visible": true
+    },
+    {
+      "bg": [
+        238,
+        244,
+        253
+      ],
+      "color": "rgb(30, 85, 164)",
+      "ratio": 6.57,
+      "selector": "button.",
+      "size": "13px",
+      "text": "调用流程图",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "button.",
+      "size": "13px",
+      "text": "运行时间线",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.mm-muted",
+      "size": "10px",
+      "text": "选择运行查看输入、输出与耗时",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "CXTE-4 · 9 次运行 · 5 条关系",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "button.",
+      "size": "13px",
+      "text": "专注图谱",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "button.",
+      "size": "12px",
+      "text": "70%",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "button.",
+      "size": "12px",
+      "text": "适应宽度",
+      "visible": true
+    },
+    {
+      "bg": [
+        250,
+        251,
+        252
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.98,
+      "selector": "summary.",
+      "size": "12px",
+      "text": "时间范围",
+      "visible": true
+    },
+    {
+      "bg": [
+        250,
+        251,
+        252
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.98,
+      "selector": "label.",
+      "size": "12px",
+      "text": "开始于",
+      "visible": true
+    },
+    {
+      "bg": [
+        250,
+        251,
+        252
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.98,
+      "selector": "label.",
+      "size": "12px",
+      "text": "截至",
+      "visible": true
+    },
+    {
+      "bg": [
+        250,
+        251,
+        252
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.74,
+      "selector": "small.",
+      "size": "10px",
+      "text": "按运行开始时间筛选；未开始时使用创建时间。",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        251,
+        252
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.98,
+      "selector": "label.",
+      "size": "12px",
+      "text": "连线摘要",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "运行中",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "已完成",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "失败",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "等待中",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "10px",
+      "text": "委派",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "10px",
+      "text": "重跑",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.mm-call-scroll-hint",
+      "size": "10px",
+      "text": "点击连线查看关系和时间 · 点击运行查看进展",
+      "visible": false
+    },
+    {
+      "bg": [
+        249,
+        250,
+        252
+      ],
+      "color": "rgb(78, 97, 123)",
+      "ratio": 6.07,
+      "selector": "span.",
+      "size": "11px",
+      "text": "调用链 15 次运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        249,
+        250,
+        252
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.22,
+      "selector": "small.",
+      "size": "10px",
+      "text": "5 次运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        249,
+        250,
+        252
+      ],
+      "color": "rgb(78, 97, 123)",
+      "ratio": 6.07,
+      "selector": "span.",
+      "size": "11px",
+      "text": "调用链 22 次运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        249,
+        250,
+        252
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.22,
+      "selector": "small.",
+      "size": "10px",
+      "text": "2 次运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        249,
+        250,
+        252
+      ],
+      "color": "rgb(78, 97, 123)",
+      "ratio": 6.07,
+      "selector": "span.",
+      "size": "11px",
+      "text": "来源未关联2 次运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        249,
+        250,
+        252
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.22,
+      "selector": "small.",
+      "size": "10px",
+      "text": "2 次运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        245,
+        247,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.5,
+      "selector": "text.v2-edge-label",
+      "size": "10px",
+      "text": "重跑",
+      "visible": false
+    },
+    {
+      "bg": [
+        245,
+        247,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.5,
+      "selector": "text.v2-edge-label",
+      "size": "10px",
+      "text": "重跑",
+      "visible": false
+    },
+    {
+      "bg": [
+        245,
+        247,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.5,
+      "selector": "text.v2-edge-label",
+      "size": "10px",
+      "text": "委派",
+      "visible": false
+    },
+    {
+      "bg": [
+        245,
+        247,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.5,
+      "selector": "text.v2-edge-label",
+      "size": "10px",
+      "text": "委派",
+      "visible": false
+    },
+    {
+      "bg": [
+        245,
+        247,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.5,
+      "selector": "text.v2-edge-label",
+      "size": "10px",
+      "text": "委派",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-call-node-kicker",
+      "size": "10px",
+      "text": "执行运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-avatar",
+      "size": "20px",
+      "text": "🦊",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-name",
+      "size": "14px",
+      "text": "需求文档拆解分析师",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "11px",
+      "text": "#368a8556",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        240,
+        240
+      ],
+      "color": "rgb(165, 48, 48)",
+      "ratio": 6.19,
+      "selector": "span.mm-call-node-status",
+      "size": "10px",
+      "text": "失败",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(134, 83, 16)",
+      "ratio": 6.44,
+      "selector": "span.mm-call-source-note",
+      "size": "10px",
+      "text": "上游未加载",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "10px",
+      "text": "1 分 44 秒",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-call-node-kicker",
+      "size": "10px",
+      "text": "执行运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-avatar",
+      "size": "20px",
+      "text": "🦊",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-name",
+      "size": "14px",
+      "text": "需求文档拆解分析师",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "11px",
+      "text": "#a94ba3da",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        240,
+        240
+      ],
+      "color": "rgb(165, 48, 48)",
+      "ratio": 6.19,
+      "selector": "span.mm-call-node-status",
+      "size": "10px",
+      "text": "失败",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(134, 83, 16)",
+      "ratio": 6.44,
+      "selector": "span.mm-call-source-note",
+      "size": "10px",
+      "text": "上游未加载",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "10px",
+      "text": "38 秒",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-call-node-kicker",
+      "size": "10px",
+      "text": "执行运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-avatar",
+      "size": "20px",
+      "text": "🦊",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-name",
+      "size": "14px",
+      "text": "需求文档拆解分析师",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "11px",
+      "text": "#8f602c2e",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        240,
+        240
+      ],
+      "color": "rgb(165, 48, 48)",
+      "ratio": 6.19,
+      "selector": "span.mm-call-node-status",
+      "size": "10px",
+      "text": "失败",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(134, 83, 16)",
+      "ratio": 6.44,
+      "selector": "span.mm-call-source-note",
+      "size": "10px",
+      "text": "上游未加载",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "10px",
+      "text": "33 秒",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-call-node-kicker",
+      "size": "10px",
+      "text": "执行运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-avatar",
+      "size": "20px",
+      "text": "🦊",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-name",
+      "size": "14px",
+      "text": "需求文档拆解分析师",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "11px",
+      "text": "#f90edb5d",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        240,
+        240
+      ],
+      "color": "rgb(165, 48, 48)",
+      "ratio": 6.19,
+      "selector": "span.mm-call-node-status",
+      "size": "10px",
+      "text": "失败",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "10px",
+      "text": "开始 14:48",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "10px",
+      "text": "8 分 10 秒",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-call-node-kicker",
+      "size": "10px",
+      "text": "执行运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-avatar",
+      "size": "20px",
+      "text": "🦊",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-name",
+      "size": "14px",
+      "text": "需求文档拆解分析师",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "11px",
+      "text": "#d1701910",
+      "visible": false
+    },
+    {
+      "bg": [
+        237,
+        247,
+        242
+      ],
+      "color": "rgb(17, 105, 79)",
+      "ratio": 6.08,
+      "selector": "span.mm-call-node-status",
+      "size": "10px",
+      "text": "已完成",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "10px",
+      "text": "开始 14:06",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "10px",
+      "text": "20 分 44 秒",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-call-node-kicker",
+      "size": "10px",
+      "text": "执行运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-avatar",
+      "size": "20px",
+      "text": "🌞",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-name",
+      "size": "14px",
+      "text": "项目经理",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "11px",
+      "text": "#e451fb6a",
+      "visible": false
+    },
+    {
+      "bg": [
+        237,
+        247,
+        242
+      ],
+      "color": "rgb(17, 105, 79)",
+      "ratio": 6.08,
+      "selector": "span.mm-call-node-status",
+      "size": "10px",
+      "text": "已完成",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "10px",
+      "text": "开始 14:27",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "10px",
+      "text": "4 分 37 秒",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-call-node-kicker",
+      "size": "10px",
+      "text": "执行运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-avatar",
+      "size": "20px",
+      "text": "🦊",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-name",
+      "size": "14px",
+      "text": "需求文档拆解分析师",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "11px",
+      "text": "#577aac5c",
+      "visible": false
+    },
+    {
+      "bg": [
+        237,
+        247,
+        242
+      ],
+      "color": "rgb(17, 105, 79)",
+      "ratio": 6.08,
+      "selector": "span.mm-call-node-status",
+      "size": "10px",
+      "text": "已完成",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "10px",
+      "text": "开始 16:34",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "10px",
+      "text": "11 分 33 秒",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-call-node-kicker",
+      "size": "10px",
+      "text": "执行运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-avatar",
+      "size": "20px",
+      "text": "🌞",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-name",
+      "size": "14px",
+      "text": "项目经理",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "11px",
+      "text": "#b6aa538a",
+      "visible": false
+    },
+    {
+      "bg": [
+        237,
+        247,
+        242
+      ],
+      "color": "rgb(17, 105, 79)",
+      "ratio": 6.08,
+      "selector": "span.mm-call-node-status",
+      "size": "10px",
+      "text": "已完成",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "10px",
+      "text": "开始 16:35",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "10px",
+      "text": "4 分 53 秒",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.mm-call-node-kicker",
+      "size": "10px",
+      "text": "执行运行",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-avatar",
+      "size": "20px",
+      "text": "🌞",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(37, 55, 79)",
+      "ratio": 12.08,
+      "selector": "span.ui-agent-name",
+      "size": "14px",
+      "text": "项目经理",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "11px",
+      "text": "#94b3fc12",
+      "visible": false
+    },
+    {
+      "bg": [
+        237,
+        247,
+        242
+      ],
+      "color": "rgb(17, 105, 79)",
+      "ratio": 6.08,
+      "selector": "span.mm-call-node-status",
+      "size": "10px",
+      "text": "已完成",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "10px",
+      "text": "开始 16:46",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(82, 100, 124)",
+      "ratio": 6.05,
+      "selector": "span.",
+      "size": "10px",
+      "text": "5 分 54 秒",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "summary.",
+      "size": "12px",
+      "text": "3 条来源未连入调用图",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "li.",
+      "size": "12px",
+      "text": "需求文档拆解分析师 #368a8556：委派来源 #ccf131ac，来源运行未加载。",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "strong.",
+      "size": "12px",
+      "text": "需求文档拆解分析师 #368a8556",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "li.",
+      "size": "12px",
+      "text": "需求文档拆解分析师 #a94ba3da：委派来源 #ccf131ac，来源运行未加载。",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "strong.",
+      "size": "12px",
+      "text": "需求文档拆解分析师 #a94ba3da",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "li.",
+      "size": "12px",
+      "text": "需求文档拆解分析师 #8f602c2e：委派来源 #ccf131ac，来源运行未加载。",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "strong.",
+      "size": "12px",
+      "text": "需求文档拆解分析师 #8f602c2e",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "p.mm-call-footnote",
+      "size": "12px",
+      "text": "连线来自服务端的明确来源；上下位置与间距不代表耗时。",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "summary.",
+      "size": "12px",
+      "text": "人员参与 · 1 条已读取评论",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(64, 87, 119)",
+      "ratio": 7.37,
+      "selector": "p.",
+      "size": "13px",
+      "text": "人员 #85f38b48 · 2026/11/3 16:34:55 · 评论",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(64, 87, 119)",
+      "ratio": 7.37,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "人员 #85f38b48",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(64, 87, 119)",
+      "ratio": 7.37,
+      "selector": "p.",
+      "size": "13px",
+      "text": "C-1 推荐，C-2 推荐",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(64, 87, 119)",
+      "ratio": 7.37,
+      "selector": "p.",
+      "size": "13px",
+      "text": "触发运行：需求文档拆解分析师 #577aac5c",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(64, 87, 119)",
+      "ratio": 7.37,
+      "selector": "button.",
+      "size": "13px",
+      "text": "需求文档拆解分析师 #577aac5c",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "p.mm-muted",
+      "size": "12px",
+      "text": "仅展示该任务已读取的人类评论；只有评论 ID 与运行触发 ID 一致时才标记触发，其他评论不推断调用关系。人员名称未提供时显示 I",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.",
+      "size": "10px",
+      "text": "新版对照稿 · 所有系统写操作已隔离",
+      "visible": true
+    }
+  ],
+  "url": "http://127.0.0.1:55317/?task=CXTE-4",
+  "viewport": [
+    355,
+    767
+  ]
+}

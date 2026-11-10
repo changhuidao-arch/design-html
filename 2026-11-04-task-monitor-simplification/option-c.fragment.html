@@ -1,0 +1,82 @@
+<style>
+.demo-c,.demo-c *, .mobile-c,.mobile-c *{box-sizing:border-box}
+.demo-c{width:960px;height:560px;overflow:hidden;background:#f6f2e9;color:#332e27;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:16px;line-height:1.5;display:grid;grid-template-rows:70px minmax(0,1fr)}
+.demo-c .c-head{display:flex;align-items:center;justify-content:space-between;padding:0 30px;border-bottom:1px solid #c9c0b2;background:#fbf8f1}
+.demo-c .c-brand{display:flex;align-items:baseline;gap:14px}
+.demo-c .c-brand strong{font-family:"Songti SC","STSong",serif;font-size:28px;font-weight:600;letter-spacing:.035em}
+.demo-c .c-brand span,.demo-c .c-head small{font-size:14px;color:#756b60}
+.demo-c .c-head small{font-variant-numeric:tabular-nums}
+.demo-c .c-body{min-height:0;display:grid;grid-template-columns:205px minmax(0,1fr) 225px}
+.demo-c .c-index{min-width:0;padding:29px 22px;border-right:1px solid #d7cfc3;background:#f1ebdf}
+.demo-c .c-eyebrow{display:block;color:#867868;font-size:12px;letter-spacing:.12em}
+.demo-c .c-index h3{font-family:"Songti SC","STSong",serif;font-size:22px;font-weight:600;line-height:1.25;margin:10px 0 26px}
+.demo-c .c-index-item{padding:13px 0;border-top:1px solid #d2c8b9}
+.demo-c .c-index-item:last-child{border-bottom:1px solid #d2c8b9}
+.demo-c .c-index-item b{display:block;font-size:15px;font-weight:600;margin-bottom:3px}
+.demo-c .c-index-item small{display:block;color:#746c62;font-size:13px;line-height:1.45}
+.demo-c .c-index-item.active b{color:#8b512f}
+.demo-c .c-center{min-width:0;padding:28px 33px 20px;display:flex;flex-direction:column}
+.demo-c .c-kicker{display:flex;align-items:center;gap:10px;color:#795a3e;font-size:13px;font-weight:600;letter-spacing:.03em}
+.demo-c .c-pill{padding:2px 8px;border:1px solid #b9977b;border-radius:3px;background:#efe1d2;color:#70432a;white-space:nowrap}
+.demo-c .c-center h2{font-family:"Songti SC","STSong",serif;font-size:38px;font-weight:600;line-height:1.2;letter-spacing:.02em;margin:16px 0 5px}
+.demo-c .c-subtitle{font-size:18px;color:#5b5146;margin:0}
+.demo-c .c-current{display:grid;grid-template-columns:1fr auto;gap:16px;align-items:end;padding:23px 0 21px;margin-top:22px;border-top:2px solid #6d5c4d;border-bottom:1px solid #cfc5b7}
+.demo-c .c-current strong{display:block;font-size:21px;font-weight:600;line-height:1.35}
+.demo-c .c-current p{color:#665c51;font-size:14px;line-height:1.5;margin:7px 0 0;max-width:33ch}
+.demo-c .c-action{display:inline-flex;align-items:center;padding:9px 12px;background:#3d332b;color:#faf6ef;font-size:14px;font-weight:600;white-space:nowrap;border-radius:3px}
+.demo-c .c-recent{margin-top:auto}
+.demo-c .c-section-line{display:flex;align-items:center;justify-content:space-between;margin-bottom:9px}
+.demo-c .c-section-line strong{font-size:15px;font-weight:600}
+.demo-c .c-section-line span{font-size:12px;color:#796f63}
+.demo-c .c-run{display:grid;grid-template-columns:78px 1fr auto;gap:10px;align-items:center;padding:9px 0;border-top:1px solid #d5ccc0;font-size:13px}
+.demo-c .c-run time{color:#766c61;font-variant-numeric:tabular-nums}
+.demo-c .c-run b{font-size:14px;font-weight:600}
+.demo-c .c-run span:last-child{font-variant-numeric:tabular-nums;color:#4e6659;white-space:nowrap}
+.demo-c .c-side{min-width:0;padding:29px 20px;border-left:1px solid #d7cfc3;background:#fbf8f1;display:flex;flex-direction:column}
+.demo-c .c-side h3{font-family:"Songti SC","STSong",serif;font-size:24px;font-weight:600;line-height:1.25;margin:11px 0 20px}
+.demo-c .c-quote{padding:14px 0;border-top:1px solid #d8cec0;border-bottom:1px solid #d8cec0}
+.demo-c .c-quote p{margin:0 0 11px;font-size:17px;line-height:1.45;font-weight:600}
+.demo-c .c-quote small{font-size:12px;color:#786d61}
+.demo-c .c-source{display:block;color:#8b512f;font-size:13px;font-weight:600;margin-top:12px}
+.demo-c .c-archive{margin-top:auto;border:1px solid #cbbba8;background:#f2e9dc;border-radius:3px;padding:12px 13px}
+.demo-c .c-archive b{display:block;color:#684a35;font-size:15px;font-weight:600}
+.demo-c .c-archive small{display:block;color:#766757;font-size:12px;line-height:1.45;margin-top:5px}
+.demo-c .c-archive em{display:block;font-style:normal;color:#8b512f;font-size:13px;font-weight:600;margin-top:10px}
+.mobile-c,.mobile-c *{box-sizing:border-box}
+.mobile-c{width:320px;min-height:510px;background:#f6f2e9;color:#332e27;font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;font-size:14px;line-height:1.5;overflow:hidden}
+.mobile-c .cm-head{height:58px;padding:14px 16px;border-bottom:1px solid #c9c0b2;background:#fbf8f1;display:flex;align-items:center;justify-content:space-between}
+.mobile-c .cm-head strong{font-family:"Songti SC","STSong",serif;font-size:21px;font-weight:600}
+.mobile-c .cm-head span{font-size:12px;color:#766a5f}
+.mobile-c .cm-body{padding:18px 16px 24px}
+.mobile-c .cm-overline{font-size:12px;color:#8b512f;font-weight:600;margin:0 0 8px}
+.mobile-c h2{font-family:"Songti SC","STSong",serif;font-size:27px;line-height:1.2;font-weight:600;margin:0 0 5px}
+.mobile-c .cm-sub{font-size:13px;color:#62584d;margin:0 0 15px}
+.mobile-c .cm-status{display:flex;gap:8px;align-items:center;padding:11px 0;border-top:2px solid #6d5c4d;border-bottom:1px solid #d2c8b9}
+.mobile-c .cm-status b{background:#efe1d2;border:1px solid #b9977b;border-radius:3px;padding:2px 6px;font-size:12px;color:#70432a;white-space:nowrap}
+.mobile-c .cm-status span{font-size:13px;color:#554e45}
+.mobile-c .cm-block{padding-top:15px}
+.mobile-c .cm-label{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:7px}
+.mobile-c .cm-label strong{font-size:15px;font-weight:600}
+.mobile-c .cm-label small{font-size:12px;color:#756b60}
+.mobile-c .cm-result{font-size:14px;margin:0 0 7px}
+.mobile-c .cm-result time{font-variant-numeric:tabular-nums;color:#756b60;font-size:12px;margin-right:6px}
+.mobile-c .cm-result b{font-weight:600}
+.mobile-c .cm-link{font-size:13px;color:#8b512f;font-weight:600}
+.mobile-c .cm-person{border-top:1px solid #d2c8b9;margin-top:15px;padding-top:14px}
+.mobile-c .cm-person p{font-size:14px;margin:7px 0;color:#4e453c}
+.mobile-c .cm-archive{margin-top:16px;background:#f2e9dc;border:1px solid #cbbba8;border-radius:3px;padding:10px 12px;display:flex;justify-content:space-between;gap:8px}
+.mobile-c .cm-archive strong{font-size:13px;color:#684a35;font-weight:600}
+.mobile-c .cm-archive span{font-size:12px;color:#8b512f;white-space:nowrap}
+</style>
+<div class="demo-c">
+  <header class="c-head"><div class="c-brand"><strong>任务监控</strong><span>待办卷宗</span></div><small>cx_test_new　/　11 月 03 日 17:18</small></header>
+  <div class="c-body">
+    <aside class="c-index"><span class="c-eyebrow">工作顺序</span><h3>先处理当前，<br>再翻历史。</h3><div class="c-index-item active"><b>业务待审核</b><small>CXTE-4 · 需求澄清与拆解</small></div><div class="c-index-item"><b>运行状态</b><small>当前无活动运行</small></div><div class="c-index-item"><b>历史记录</b><small>4 次已结束的失败</small></div></aside>
+    <main class="c-center"><div class="c-kicker"><span>CXTE-4</span><span class="c-pill">待审核</span></div><h2>需求澄清与拆解</h2><p class="c-subtitle">V2 传输加密迁移</p><div class="c-current"><div><strong>当前没有活动运行</strong><p>这项任务停在业务审核；监控未发现正在执行的智能体运行。</p></div><span class="c-action">在 Multica 查看 ↗</span></div><section class="c-recent"><div class="c-section-line"><strong>最近明确结果</strong><span>按运行开始时间</span></div><div class="c-run"><time>11/03 16:46</time><b>项目经理 · 已完成</b><span>5 分 54 秒</span></div><div class="c-run"><time>11/03 16:34</time><b>需求文档拆解分析师 · 已完成</b><span>11 分 33 秒</span></div></section></main>
+    <aside class="c-side"><span class="c-eyebrow">人员参与</span><h3>最近一次回复</h3><div class="c-quote"><p>“C-1 推荐，C-2 推荐”</p><small>chenxing.java · 11/03 16:34</small><span class="c-source">查看原评论 ↗</span></div><div class="c-archive"><b>历史失败 · 4 次</b><small>均已结束；用于追查原因，不表示当前故障。</small><em>展开历史证据 ▾</em></div></aside>
+  </div>
+</div>
+<div class="mobile-c">
+  <header class="cm-head"><strong>任务监控</strong><span>cx_test_new</span></header>
+  <div class="cm-body"><p class="cm-overline">CXTE-4　·　业务待审核</p><h2>需求澄清与拆解</h2><p class="cm-sub">V2 传输加密迁移</p><div class="cm-status"><b>待审核</b><span>当前无活动运行</span></div><section class="cm-block"><div class="cm-label"><strong>最近明确结果</strong><small>2 次已完成</small></div><p class="cm-result"><time>16:46</time><b>项目经理</b> · 5 分 54 秒</p><p class="cm-result"><time>16:34</time><b>需求文档拆解分析师</b> · 11 分 33 秒</p><span class="cm-link">查看运行证据 ↗</span></section><section class="cm-person"><div class="cm-label"><strong>人员参与</strong><small>11/03 16:34</small></div><p>“C-1 推荐，C-2 推荐”</p><span class="cm-link">查看原评论 ↗</span></section><div class="cm-archive"><strong>历史失败 · 4 次</strong><span>展开证据 ▾</span></div></div>
+</div>

@@ -1,0 +1,294 @@
+{
+  "fetchedAt": "2026-11-04T08:20:58.024Z",
+  "workspaceName": "cx_test_new",
+  "hierarchySource": "Multica parent_issue_id，2026-11-04 实时只读查询",
+  "coverage": {
+    "issues": 10,
+    "runs": 22
+  },
+  "tasks": [
+    {
+      "id": "01a18b89-e6ad-7db9-87ba-f20b17401987",
+      "parentIssueId": "01a18b83-3087-7f03-983a-5d407c20bd41",
+      "identifier": "CXTE-9",
+      "title": "CXTE-3 需求评审（门禁 G1）",
+      "status": "in_review",
+      "runs": [
+        {
+          "id": "01a1a0ac-3a47-7c5b-954a-0cb907aa441a",
+          "agentName": "项目经理",
+          "status": "completed",
+          "startedAt": "2026-11-03T09:10:04Z",
+          "completedAt": "2026-11-03T09:13:06Z",
+          "queueMs": 0,
+          "elapsedMs": 182000
+        },
+        {
+          "id": "01a1a08f-af94-7a3e-b26c-6467e11a970f",
+          "agentName": "需求评审员",
+          "status": "completed",
+          "startedAt": "2026-11-03T08:38:53Z",
+          "completedAt": "2026-11-03T09:18:52Z",
+          "queueMs": 0,
+          "elapsedMs": 2399000
+        }
+      ]
+    },
+    {
+      "id": "01a18b89-9138-7bfb-9d6f-d075efc1a0e5",
+      "parentIssueId": "01a18b83-3087-7f03-983a-5d407c20bd41",
+      "identifier": "CXTE-4",
+      "title": "CXTE-3 需求澄清与拆解：V2 传输加密迁移（demo_new）",
+      "status": "in_review",
+      "runs": [
+        {
+          "id": "01a1a096-4142-743e-8ed7-339794b3fc12",
+          "agentName": "项目经理",
+          "status": "completed",
+          "startedAt": "2026-11-03T08:46:04Z",
+          "completedAt": "2026-11-03T08:51:58Z",
+          "queueMs": 0,
+          "elapsedMs": 354000
+        },
+        {
+          "id": "01a1a08c-2f26-758e-879a-05bbb6aa538a",
+          "agentName": "项目经理",
+          "status": "completed",
+          "startedAt": "2026-11-03T08:35:04Z",
+          "completedAt": "2026-11-03T08:39:57Z",
+          "queueMs": 0,
+          "elapsedMs": 293000
+        },
+        {
+          "id": "01a1a08c-0d8e-741c-9c59-358b577aac5c",
+          "agentName": "需求文档拆解分析师",
+          "status": "completed",
+          "startedAt": "2026-11-03T08:34:55Z",
+          "completedAt": "2026-11-03T08:46:28Z",
+          "queueMs": 0,
+          "elapsedMs": 693000
+        },
+        {
+          "id": "01a1a016-f9aa-7db5-8291-73b9e451fb6a",
+          "agentName": "项目经理",
+          "status": "completed",
+          "startedAt": "2026-11-03T06:27:02Z",
+          "completedAt": "2026-11-03T06:31:39Z",
+          "queueMs": 0,
+          "elapsedMs": 277000
+        },
+        {
+          "id": "01a1a000-3ee6-7115-a219-29a6d1701910",
+          "agentName": "需求文档拆解分析师",
+          "status": "completed",
+          "startedAt": "2026-11-03T06:06:44Z",
+          "completedAt": "2026-11-03T06:27:28Z",
+          "queueMs": 271000,
+          "elapsedMs": 1244000
+        },
+        {
+          "id": "01a18b91-9971-7f0e-b18e-e008f90edb5d",
+          "agentName": "需求文档拆解分析师",
+          "status": "failed",
+          "startedAt": "2026-10-30T06:48:57Z",
+          "completedAt": "2026-10-30T06:57:07Z",
+          "queueMs": 0,
+          "elapsedMs": 490000
+        },
+        {
+          "id": "01a18b90-0c02-71d0-a0a0-1ff58f602c2e",
+          "agentName": "需求文档拆解分析师",
+          "status": "failed",
+          "startedAt": "2026-10-30T06:47:15Z",
+          "completedAt": "2026-10-30T06:47:48Z",
+          "queueMs": 0,
+          "elapsedMs": 33000
+        },
+        {
+          "id": "01a18b8c-b1be-793c-b4e1-f43ca94ba3da",
+          "agentName": "需求文档拆解分析师",
+          "status": "failed",
+          "startedAt": "2026-10-30T06:43:36Z",
+          "completedAt": "2026-10-30T06:44:14Z",
+          "queueMs": 0,
+          "elapsedMs": 38000
+        },
+        {
+          "id": "01a18b89-9143-7e4c-88af-0e96368a8556",
+          "agentName": "需求文档拆解分析师",
+          "status": "failed",
+          "startedAt": "2026-10-30T06:40:11Z",
+          "completedAt": "2026-10-30T06:41:55Z",
+          "queueMs": 0,
+          "elapsedMs": 104000
+        }
+      ]
+    },
+    {
+      "id": "01a18b83-3087-7f03-983a-5d407c20bd41",
+      "parentIssueId": null,
+      "identifier": "CXTE-3",
+      "title": "加密功能迁移",
+      "status": "in_progress",
+      "runs": [
+        {
+          "id": "01a18b90-8c8f-7c4d-ba64-dd18f70d214a",
+          "agentName": "项目经理",
+          "status": "completed",
+          "startedAt": "2026-10-30T06:47:48Z",
+          "completedAt": "2026-10-30T06:57:07Z",
+          "queueMs": 0,
+          "elapsedMs": 559000
+        },
+        {
+          "id": "01a18b8d-47b5-72e5-afdb-e6b80700874b",
+          "agentName": "项目经理",
+          "status": "completed",
+          "startedAt": "2026-10-30T06:44:14Z",
+          "completedAt": "2026-10-30T06:47:48Z",
+          "queueMs": 0,
+          "elapsedMs": 214000
+        },
+        {
+          "id": "01a18b8b-27c5-7c09-b013-7b140eb7030d",
+          "agentName": "项目经理",
+          "status": "completed",
+          "startedAt": "2026-10-30T06:41:55Z",
+          "completedAt": "2026-10-30T06:44:14Z",
+          "queueMs": 0,
+          "elapsedMs": 139000
+        },
+        {
+          "id": "01a18b83-308d-7ac4-a2fa-524eccf131ac",
+          "agentName": "项目经理",
+          "status": "completed",
+          "startedAt": "2026-10-30T06:33:13Z",
+          "completedAt": "2026-10-30T06:41:55Z",
+          "queueMs": 0,
+          "elapsedMs": 522000
+        }
+      ]
+    },
+    {
+      "id": "01a18b89-e6fa-7084-a953-458a9e1a176b",
+      "parentIssueId": "01a18b83-3087-7f03-983a-5d407c20bd41",
+      "identifier": "CXTE-10",
+      "title": "CXTE-3 构建（CI/CD）",
+      "status": "backlog",
+      "runs": []
+    },
+    {
+      "id": "01a18b89-e659-77d3-b3b9-9ad8635fc440",
+      "parentIssueId": "01a18b83-3087-7f03-983a-5d407c20bd41",
+      "identifier": "CXTE-6",
+      "title": "CXTE-3 代码审查（门禁 G3）",
+      "status": "backlog",
+      "runs": []
+    },
+    {
+      "id": "01a18b89-e68d-7994-9218-aeaa31d58fcf",
+      "parentIssueId": "01a18b83-3087-7f03-983a-5d407c20bd41",
+      "identifier": "CXTE-7",
+      "title": "CXTE-3 编码实现与自测：V2 传输加密迁移（demo_new）",
+      "status": "backlog",
+      "runs": []
+    },
+    {
+      "id": "01a18b89-e699-720e-ae67-da382c00c98f",
+      "parentIssueId": "01a18b83-3087-7f03-983a-5d407c20bd41",
+      "identifier": "CXTE-8",
+      "title": "CXTE-3 技术方案设计评审（门禁 G2）",
+      "status": "backlog",
+      "runs": []
+    },
+    {
+      "id": "01a18b89-e656-7b0d-93f6-45a183dbcfd2",
+      "parentIssueId": "01a18b83-3087-7f03-983a-5d407c20bd41",
+      "identifier": "CXTE-5",
+      "title": "CXTE-3 技术方案设计：V2 传输加密迁移（demo_new）",
+      "status": "backlog",
+      "runs": []
+    },
+    {
+      "id": "01a18acb-f071-7825-97b1-6d752ecc29f2",
+      "parentIssueId": null,
+      "identifier": "CXTE-2",
+      "title": "加密迁移",
+      "status": "in_review",
+      "runs": [
+        {
+          "id": "01a18acb-f075-7bb5-9084-17dfea302791",
+          "agentName": "项目经理",
+          "status": "completed",
+          "startedAt": "2026-10-30T03:13:03Z",
+          "completedAt": "2026-10-30T03:37:42Z",
+          "queueMs": 0,
+          "elapsedMs": 1479000
+        }
+      ]
+    },
+    {
+      "id": "01a186fc-f6dd-70d0-9a51-43cfe63538cc",
+      "parentIssueId": null,
+      "identifier": "CXTE-1",
+      "title": "运行时环境检测",
+      "status": "in_review",
+      "runs": [
+        {
+          "id": "01a18714-7090-7679-9b95-691a221c9009",
+          "agentName": "工作区小助手",
+          "status": "completed",
+          "startedAt": "2026-10-29T09:53:46Z",
+          "completedAt": "2026-10-29T10:01:13Z",
+          "queueMs": 0,
+          "elapsedMs": 447000
+        },
+        {
+          "id": "01a18714-5b5b-726c-a233-6c887f36af8b",
+          "agentName": "工作区小助手",
+          "status": "failed",
+          "startedAt": "2026-10-29T09:53:41Z",
+          "completedAt": "2026-10-29T09:53:42Z",
+          "queueMs": 1000,
+          "elapsedMs": 1000
+        },
+        {
+          "id": "01a18711-fd65-7ac5-a0e8-787f93f76d76",
+          "agentName": "工作区小助手",
+          "status": "failed",
+          "startedAt": "2026-10-29T09:51:05Z",
+          "completedAt": "2026-10-29T09:51:06Z",
+          "queueMs": 0,
+          "elapsedMs": 1000
+        },
+        {
+          "id": "01a186ff-8517-7b8d-9d9f-f612521df3fc",
+          "agentName": "工作区小助手",
+          "status": "failed",
+          "startedAt": "2026-10-29T09:30:55Z",
+          "completedAt": "2026-10-29T09:30:59Z",
+          "queueMs": 0,
+          "elapsedMs": 4000
+        },
+        {
+          "id": "01a186fc-f6ff-7d48-af78-be2923b3600e",
+          "agentName": "工作区小助手",
+          "status": "failed",
+          "startedAt": "2026-10-29T09:28:08Z",
+          "completedAt": "2026-10-29T09:28:12Z",
+          "queueMs": 1000,
+          "elapsedMs": 4000
+        },
+        {
+          "id": "01a186fc-f6e4-714d-a000-e450ca354c84",
+          "agentName": "工作区小助手",
+          "status": "cancelled",
+          "startedAt": null,
+          "completedAt": "2026-10-29T09:28:07Z",
+          "queueMs": null,
+          "elapsedMs": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+<style>
+.dir-b{height:420px;width:100%;display:flex;flex-direction:column;overflow:hidden;background:#20272b;color:#ecf1f2;font-family:system-ui,'Microsoft YaHei',sans-serif;font-size:12px;line-height:1.5;color-scheme:dark}
+.dir-b *{box-sizing:border-box}.dir-b button,.dir-b summary{font:inherit;cursor:pointer}.dir-b button{color:inherit}.dir-b button:focus-visible,.dir-b summary:focus-visible{outline:2px solid #cde5da;outline-offset:2px}.dir-b .b-num{font-family:Consolas,'SFMono-Regular',monospace;font-variant-numeric:tabular-nums}.dir-b .b-top{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 16px 10px;border-bottom:1px solid #414b51}.dir-b .b-brand{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:600;letter-spacing:.02em}.dir-b .b-brand svg{color:#bfd6ce}.dir-b .b-meta{color:#b5c0c5;font-size:10px}.dir-b .b-task{padding:10px 16px 8px;display:flex;align-items:flex-start;gap:8px}.dir-b .b-task-title{font-size:13px;font-weight:600;margin:0;flex:1;min-width:0}.dir-b .b-state{white-space:nowrap;font-size:10px;padding:2px 7px;border:1px solid #727f7d;color:#d9e7e1;border-radius:3px}.dir-b .b-workspace{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;padding:0 16px}.dir-b .b-chart-caption{display:flex;justify-content:space-between;gap:8px;color:#b8c4c9;font-size:10px;margin-bottom:4px}.dir-b .b-axis{display:grid;grid-template-columns:133px 1fr;align-items:center;color:#afbdc2;font-size:10px;margin-bottom:3px}.dir-b .b-ticks{display:flex;justify-content:space-between;font-family:Consolas,monospace}.dir-b .b-lane{display:grid;grid-template-columns:133px 1fr;align-items:center;width:100%;height:25px;background:transparent;border:1px solid transparent;border-radius:3px;padding:0;text-align:left}.dir-b .b-lane[aria-pressed=true]{border-color:#849e94;background:#35433f}.dir-b .b-lane:hover{background:#2f3b3b}.dir-b .b-agent{padding-left:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#cdd6da;font-size:10px}.dir-b .b-agent code{color:#9caeb4;font-size:9px}.dir-b .b-track{position:relative;height:100%;background:repeating-linear-gradient(to right,#52606855 0,#52606855 1px,transparent 1px,transparent 33.333%)}.dir-b .b-bar{position:absolute;top:7px;height:9px;background:#b7cfc4;border-radius:1px}.dir-b .b-lane[aria-pressed=true] .b-bar{background:#e3efe9}.dir-b .b-history{color:#d8be8b;font-size:10px;margin:5px 0}.dir-b .b-history summary{width:fit-content}.dir-b .b-history-items{display:grid;gap:3px;padding:5px 0;color:#bbc7cc}.dir-b .b-history-items button{background:#293137;border:1px solid #465158;text-align:left;padding:4px 7px;border-radius:3px}.dir-b .b-result{margin:7px 0 12px;border-top:1px solid #56635f;padding-top:9px}.dir-b .b-result-head{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.dir-b .b-result-head strong{font-size:12px;font-weight:600}.dir-b .b-result-head code{color:#b9cac3;font-size:10px}.dir-b .b-result-head .b-duration{margin-left:auto;font-size:13px}.dir-b .b-complete{font-size:10px;color:#bfd6c9}.dir-b .b-output{font-size:12px;color:#edf1f1;margin:6px 0;line-height:1.6}.dir-b .b-evidence{border:0;border-bottom:1px solid #6a7f76;padding:1px 0;color:#c2d6cd;background:transparent;font-size:10px}.dir-b .b-lognote{font-size:10px;color:#b6c4c9;margin-top:5px;padding:6px 8px;background:#293238;white-space:pre-wrap}.dir-b .b-footer{border-top:1px solid #414b51;padding:6px 16px;color:#abb9be;font-size:9px;display:flex;justify-content:space-between}.dir-b .b-current{color:#d4e0dc}.dir-b .b-context{font-size:10px;color:#b9c6cb;margin:4px 0 6px}.dir-b .b-hidden{display:none}
+@container (max-width:430px){.dir-b .b-top,.dir-b .b-task{padding-left:12px;padding-right:12px}.dir-b .b-workspace{padding-left:12px;padding-right:12px}.dir-b .b-brand{font-size:13px}.dir-b .b-meta{font-size:9px}.dir-b .b-task-title{font-size:12px}.dir-b .b-axis,.dir-b .b-lane{grid-template-columns:104px 1fr}.dir-b .b-agent{font-size:9px}.dir-b .b-agent code{display:none}.dir-b .b-chart-caption{font-size:9px}.dir-b .b-footer{font-size:8px}.dir-b .b-result-head .b-duration{font-size:11px}}
+</style>
+<section class="dir-b" aria-label="运行调度台方向样机">
+ <header class="b-top"><div class="b-brand"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" stroke="currentColor" aria-hidden="true"><path d="M2 5h16M2 10h10M2 15h14" stroke-width="2"/></svg>运行调度台</div><span class="b-meta b-num">cx_test_new / 方向样机</span></header>
+ <div class="b-task"><h3 class="b-task-title"><span class="b-num">CXTE-4</span> · V2 传输加密迁移<br><span style="font-size:10px;font-weight:400;color:#b9c6cb">需求澄清与拆解 · 9 次运行 / 2 名智能体</span></h3><span class="b-state">业务待审核</span></div>
+ <div class="b-workspace">
+  <div class="b-chart-caption"><span>2026-11-03 · 执行区间 / 上海时间</span><span>5 / 9 次运行 · 点选查看结果</span></div>
+  <div class="b-axis"><span>智能体 / 运行</span><div class="b-ticks"><span>14:00</span><span>15:00</span><span>16:00</span><span>17:00</span></div></div>
+  <div class="b-lanes" aria-label="按实际时间对齐的运行泳道"></div>
+  <details class="b-history"><summary>另有 4 次历史失败 · 10 月 30 日</summary><div class="b-history-items"></div></details>
+  <section class="b-result" aria-label="选中运行的结果"><div class="b-result-head"></div><p class="b-context"></p><p class="b-output"></p><button class="b-evidence" type="button" aria-expanded="false">查看过程证据</button><div class="b-lognote b-hidden"></div></section>
+ </div>
+ <footer class="b-footer"><span class="b-current">业务状态与单次运行结果分开显示</span><span class="b-num">静态快照 · 11/05 08:33</span></footer>
+</section>
+<script>
+(()=>{
+ const root=document.currentScript.previousElementSibling;
+ const data=window.PREVIEW_DATA;if(!data)return;
+ const runs=data.runs, recent=runs.filter(r=>r.startedAt.startsWith('2026-11-03')).sort((a,b)=>a.agentName.localeCompare(b.agentName)||Date.parse(a.startedAt)-Date.parse(b.startedAt));
+ const start=Date.parse('2026-11-03T06:00:00Z'),width=3*3600000;
+ const clock=v=>new Date(v).toLocaleTimeString('zh-CN',{timeZone:'Asia/Shanghai',hour:'2-digit',minute:'2-digit',hour12:false});
+ const duration=r=>{const n=Math.round((Date.parse(r.completedAt)-Date.parse(r.startedAt))/1000);return `${Math.floor(n/60)} 分 ${n%60} 秒`};
+ const escape=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+ let selected=runs.find(r=>r.id.endsWith('94b3fc12'));
+ root.querySelector('.b-lanes').innerHTML=recent.map(r=>`<button class="b-lane" type="button" data-b-run="${r.id}" aria-pressed="${r===selected}" aria-label="查看${escape(r.agentName)} ${r.id.slice(-8)}，${clock(r.startedAt)}，执行 ${duration(r)}"><span class="b-agent">${r.agentName==='需求文档拆解分析师'?'需求拆解分析师':escape(r.agentName)} <code>${r.id.slice(-8)}</code></span><span class="b-track"><span class="b-bar" style="left:${(Date.parse(r.startedAt)-start)/width*100}%;width:${(Date.parse(r.completedAt)-Date.parse(r.startedAt))/width*100}%"></span></span></button>`).join('');
+ root.querySelector('.b-history-items').innerHTML=runs.filter(r=>r.status==='failed').map(r=>`<button type="button" data-b-run="${r.id}"><span class="b-num">${clock(r.startedAt)} / #${r.id.slice(-8)}</span> · 失败 · ${duration(r)}</button>`).join('');
+ function show(r){
+  selected=r;const failed=r.status==='failed';const isLatest=r.id.endsWith('94b3fc12');
+  root.querySelectorAll('[data-b-run]').forEach(b=>{b.setAttribute('aria-pressed',String(b.dataset.bRun===r.id))});
+  const comment=data.comments.comments.find(c=>c.sourceTaskId===r.id);
+  const text=comment?.content.split('\n').find(line=>line.trim())||r.error||'未采集到本次运行的正式输出。';
+  root.querySelector('.b-result-head').innerHTML=`<strong>${escape(r.agentName)}</strong><code>#${r.id.slice(-8)}</code><span class="b-complete">${failed?'运行失败':'运行完成'}</span><span class="b-duration b-num">${duration(r)}</span>`;
+  root.querySelector('.b-context').textContent=`${isLatest?'最新运行':'历史运行'} · ${r.startedAt.startsWith('2026-11-03')?'11/03':'10/30'} ${clock(r.startedAt)}—${clock(r.completedAt)} · 结果对应本次运行时点`;
+  root.querySelector('.b-output').textContent=text.replace(/\*\*/g,'').slice(0,170);
+  root.querySelector('.b-lognote').textContent=`${r.logCount} 条原始日志 · 执行 ${duration(r)}\n${failed?'失败信息：连接中途被重置。':r.id.endsWith('e451fb6a')?'63 条过程记录。该次输出等待拍板；后续运行已收到决策并完成复核。':'完整日志已采集；可在后续正式版本逐条展开。'}\n条长仅表示开始至结束的执行区间，不代表工作量或调用关系。`;
+  root.querySelector('.b-lognote').classList.add('b-hidden');root.querySelector('.b-evidence').setAttribute('aria-expanded','false');root.querySelector('.b-evidence').textContent=`查看过程证据 · ${r.logCount} 条日志`;
+ }
+ root.addEventListener('click',e=>{const row=e.target.closest('[data-b-run]');if(row)show(runs.find(r=>r.id===row.dataset.bRun));if(e.target.closest('.b-evidence')){const box=root.querySelector('.b-lognote');const visible=box.classList.toggle('b-hidden')===false;root.querySelector('.b-evidence').setAttribute('aria-expanded',String(visible));}});
+ show(selected);
+})();
+</script>

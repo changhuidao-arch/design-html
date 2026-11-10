@@ -1,0 +1,1543 @@
+{
+  "samples": [
+    {
+      "bg": [
+        234,
+        241,
+        252
+      ],
+      "color": "rgb(36, 99, 209)",
+      "ratio": 4.89,
+      "selector": "span.v2-brand-mark",
+      "size": "19px",
+      "text": "M",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(36, 47, 63)",
+      "ratio": 12.72,
+      "selector": "span.",
+      "size": "18px",
+      "text": "Multica任务观测台",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.12,
+      "selector": "span.v2-brand-sub",
+      "size": "11px",
+      "text": "任务观测台",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.12,
+      "selector": "span.",
+      "size": "11px",
+      "text": "当前工作区",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.63,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "cx_test_new",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.12,
+      "selector": "span.v2-nav-label",
+      "size": "11px",
+      "text": "工作台",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(77, 95, 119)",
+      "ratio": 6.14,
+      "selector": "button.",
+      "size": "13px",
+      "text": "任务监控",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(28, 68, 129)",
+      "ratio": 9.57,
+      "selector": "button.",
+      "size": "13px",
+      "text": "异常提醒",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(77, 95, 119)",
+      "ratio": 6.14,
+      "selector": "button.",
+      "size": "13px",
+      "text": "执行性能",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(77, 95, 119)",
+      "ratio": 6.14,
+      "selector": "button.",
+      "size": "13px",
+      "text": "运行时",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.12,
+      "selector": "div.v2-side-bottom",
+      "size": "11px",
+      "text": "真实数据静态快照2026-11-05 08:33打开原版对比 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.12,
+      "selector": "small.",
+      "size": "9.16667px",
+      "text": "2026-11-05 08:33",
+      "visible": true
+    },
+    {
+      "bg": [
+        247,
+        248,
+        250
+      ],
+      "color": "rgb(36, 99, 209)",
+      "ratio": 5.23,
+      "selector": "a.",
+      "size": "11px",
+      "text": "打开原版对比 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "p.v2-breadcrumb",
+      "size": "12px",
+      "text": "工作区 / cx_test_new / 异常提醒",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "h1.",
+      "size": "20px",
+      "text": "异常提醒",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.v2-snapshot-label",
+      "size": "11px",
+      "text": "静态快照 · 11 月 5 日",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(85, 103, 127)",
+      "ratio": 5.78,
+      "selector": "button.",
+      "size": "13px",
+      "text": "连接信息",
+      "visible": true
+    },
+    {
+      "bg": [
+        36,
+        99,
+        209
+      ],
+      "color": "rgb(255, 255, 255)",
+      "ratio": 5.55,
+      "selector": "a.v2-original",
+      "size": "12px",
+      "text": "对照原版 ↗",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.",
+      "size": "11px",
+      "text": "cx_test_new",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.mm-muted",
+      "size": "12px",
+      "text": "静态快照 · 刷新仅重放已有数据",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "label.mm-workspace",
+      "size": "11px",
+      "text": "工作区选择工作区cx_testcx_test_newAutoProjectharping",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "button.",
+      "size": "13px",
+      "text": "重载快照",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.",
+      "size": "12px",
+      "text": "活动运行 0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "17px",
+      "text": "0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.",
+      "size": "12px",
+      "text": "排队 0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "17px",
+      "text": "0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.",
+      "size": "12px",
+      "text": "待关注 0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "17px",
+      "text": "0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.",
+      "size": "12px",
+      "text": "已观测终态 0",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "17px",
+      "text": "0",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.13,
+      "selector": "h2.",
+      "size": "17px",
+      "text": "异常提醒",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.8,
+      "selector": "span.mm-muted",
+      "size": "12px",
+      "text": "保留最近 200 条提醒",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "h3.",
+      "size": "15px",
+      "text": "当前无异常提醒",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "p.",
+      "size": "14px",
+      "text": "本次已读取的提醒中没有待处理项；历史失败与已恢复提醒列在下方。",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.13,
+      "selector": "h3.mm-alert-group-title",
+      "size": "14px",
+      "text": "历史运行失败 · 4",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.8,
+      "selector": "p.mm-muted.mm-list-note",
+      "size": "11px",
+      "text": "按最近 100 个业务任务分批补采，每个任务最多读取 500 次运行、保留最近 50 次失败，历史失败合计最多保留 500 条；发",
+      "visible": true
+    },
+    {
+      "bg": [
+        252,
+        252,
+        253
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.8,
+      "selector": "p.",
+      "size": "11px",
+      "text": "历史补采：成功读取 3 / 10 个任务 · 正在分批补采",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "CXTE-4 · CXTE-3 需求澄清与拆解：V2 传输加密迁移（demo_new）",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.",
+      "size": "13px",
+      "text": "连接中途被重置",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "4 次失败",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "time.",
+      "size": "12px",
+      "text": "最近失败 2026/10/30 14:57:07",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "h3.",
+      "size": "15px",
+      "text": "运行 f90edb5d",
+      "visible": true
+    },
+    {
+      "bg": [
+        244,
+        246,
+        249
+      ],
+      "color": "rgb(83, 97, 119)",
+      "ratio": 5.8,
+      "selector": "span.mm-badge",
+      "size": "11px",
+      "text": "历史失败（服务端确认）",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "12px",
+      "text": "CXTE-4 · CXTE-3 需求澄清与拆解：V2 传输加密迁移（demo_new）",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.ui-agent-label",
+      "size": "12px",
+      "text": "🦊需求文档拆解分析师",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.ui-agent-avatar",
+      "size": "19px",
+      "text": "🦊",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "运行 ID：01a18b91-9971-7f0e-b18e-e008f90edb5d",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "p.mm-muted",
+      "size": "12px",
+      "text": "失败时间（服务端结束时间）：2026/10/30 14:57:07 · 发现时间：2026/11/5 08:33:32",
+      "visible": true
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "失败诊断：连接中途被重置",
+      "visible": true
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "p.",
+      "size": "13px",
+      "text": "运行时的网络连接意外断开，导致本次运行失败。仅凭该错误无法确定是模型服务、网关、代理还是网络中的哪一端关闭了连接。",
+      "visible": true
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "p.",
+      "size": "13px",
+      "text": "核对失败时间附近的运行时和模型网关日志，检查服务是否重启、超时或主动断开；确认服务恢复后，再由你决定是否重试。",
+      "visible": true
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "summary.",
+      "size": "13px",
+      "text": "查看原始错误",
+      "visible": true
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "p.mm-evidence",
+      "size": "13px",
+      "text": "unknown: Transport: ECONNRESET: The socket connection was closed ",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "button.",
+      "size": "13px",
+      "text": "查看任务与日志",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "h3.",
+      "size": "15px",
+      "text": "运行 8f602c2e",
+      "visible": false
+    },
+    {
+      "bg": [
+        244,
+        246,
+        249
+      ],
+      "color": "rgb(83, 97, 119)",
+      "ratio": 5.8,
+      "selector": "span.mm-badge",
+      "size": "11px",
+      "text": "历史失败（服务端确认）",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "12px",
+      "text": "CXTE-4 · CXTE-3 需求澄清与拆解：V2 传输加密迁移（demo_new）",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.ui-agent-label",
+      "size": "12px",
+      "text": "🦊需求文档拆解分析师",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.ui-agent-avatar",
+      "size": "19px",
+      "text": "🦊",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "运行 ID：01a18b90-0c02-71d0-a0a0-1ff58f602c2e",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "p.mm-muted",
+      "size": "12px",
+      "text": "失败时间（服务端结束时间）：2026/10/30 14:47:48 · 发现时间：2026/11/5 08:33:32",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "失败诊断：连接中途被重置",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "p.",
+      "size": "13px",
+      "text": "运行时的网络连接意外断开，导致本次运行失败。仅凭该错误无法确定是模型服务、网关、代理还是网络中的哪一端关闭了连接。",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "p.",
+      "size": "13px",
+      "text": "核对失败时间附近的运行时和模型网关日志，检查服务是否重启、超时或主动断开；确认服务恢复后，再由你决定是否重试。",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "summary.",
+      "size": "13px",
+      "text": "查看原始错误",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "p.mm-evidence",
+      "size": "13px",
+      "text": "unknown: Transport: ECONNRESET: The socket connection was closed ",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "button.",
+      "size": "13px",
+      "text": "查看任务与日志",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "h3.",
+      "size": "15px",
+      "text": "运行 a94ba3da",
+      "visible": false
+    },
+    {
+      "bg": [
+        244,
+        246,
+        249
+      ],
+      "color": "rgb(83, 97, 119)",
+      "ratio": 5.8,
+      "selector": "span.mm-badge",
+      "size": "11px",
+      "text": "历史失败（服务端确认）",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "12px",
+      "text": "CXTE-4 · CXTE-3 需求澄清与拆解：V2 传输加密迁移（demo_new）",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.ui-agent-label",
+      "size": "12px",
+      "text": "🦊需求文档拆解分析师",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.ui-agent-avatar",
+      "size": "19px",
+      "text": "🦊",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "运行 ID：01a18b8c-b1be-793c-b4e1-f43ca94ba3da",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "p.mm-muted",
+      "size": "12px",
+      "text": "失败时间（服务端结束时间）：2026/10/30 14:44:14 · 发现时间：2026/11/5 08:33:32",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "失败诊断：连接中途被重置",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "p.",
+      "size": "13px",
+      "text": "运行时的网络连接意外断开，导致本次运行失败。仅凭该错误无法确定是模型服务、网关、代理还是网络中的哪一端关闭了连接。",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "p.",
+      "size": "13px",
+      "text": "核对失败时间附近的运行时和模型网关日志，检查服务是否重启、超时或主动断开；确认服务恢复后，再由你决定是否重试。",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "summary.",
+      "size": "13px",
+      "text": "查看原始错误",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "p.mm-evidence",
+      "size": "13px",
+      "text": "unknown: Transport: ECONNRESET: The socket connection was closed ",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "button.",
+      "size": "13px",
+      "text": "查看任务与日志",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "h3.",
+      "size": "15px",
+      "text": "运行 368a8556",
+      "visible": false
+    },
+    {
+      "bg": [
+        244,
+        246,
+        249
+      ],
+      "color": "rgb(83, 97, 119)",
+      "ratio": 5.8,
+      "selector": "span.mm-badge",
+      "size": "11px",
+      "text": "历史失败（服务端确认）",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "12px",
+      "text": "CXTE-4 · CXTE-3 需求澄清与拆解：V2 传输加密迁移（demo_new）",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.ui-agent-label",
+      "size": "12px",
+      "text": "🦊需求文档拆解分析师",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.ui-agent-avatar",
+      "size": "19px",
+      "text": "🦊",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "运行 ID：01a18b89-9143-7e4c-88af-0e96368a8556",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "p.mm-muted",
+      "size": "12px",
+      "text": "失败时间（服务端结束时间）：2026/10/30 14:41:55 · 发现时间：2026/11/5 08:33:32",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "失败诊断：连接中途被重置",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "p.",
+      "size": "13px",
+      "text": "运行时的网络连接意外断开，导致本次运行失败。仅凭该错误无法确定是模型服务、网关、代理还是网络中的哪一端关闭了连接。",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "p.",
+      "size": "13px",
+      "text": "核对失败时间附近的运行时和模型网关日志，检查服务是否重启、超时或主动断开；确认服务恢复后，再由你决定是否重试。",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "summary.",
+      "size": "13px",
+      "text": "查看原始错误",
+      "visible": false
+    },
+    {
+      "bg": [
+        250,
+        250,
+        250
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 13.88,
+      "selector": "p.mm-evidence",
+      "size": "13px",
+      "text": "unknown: Transport: ECONNRESET: The socket connection was closed ",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "button.",
+      "size": "13px",
+      "text": "查看任务与日志",
+      "visible": false
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "strong.",
+      "size": "13px",
+      "text": "监控规则与阈值",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.",
+      "size": "12px",
+      "text": "6 条规则 · 持续监控已开启",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "span.mm-muted",
+      "size": "12px",
+      "text": "触发条件与不判断的情况",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "button.",
+      "size": "13px",
+      "text": "调整阈值",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(39, 39, 42)",
+      "ratio": 14.89,
+      "selector": "strong.",
+      "size": "12px",
+      "text": "超长运行关注",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.",
+      "size": "12px",
+      "text": "运行中，服务端开始时间距今达到 30 分钟",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "small.",
+      "size": "11px",
+      "text": "耗时长不代表故障",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(39, 39, 42)",
+      "ratio": 14.89,
+      "selector": "strong.",
+      "size": "12px",
+      "text": "长时间无进展",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.",
+      "size": "12px",
+      "text": "运行中连续 10 分钟 未观察到新日志、状态变化或进度事件",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "small.",
+      "size": "11px",
+      "text": "日志未追平、读取失败或运行时离线时不判断",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(39, 39, 42)",
+      "ratio": 14.89,
+      "selector": "strong.",
+      "size": "12px",
+      "text": "工具调用等待",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.",
+      "size": "12px",
+      "text": "已观察 5 分钟 未收到相同调用标识的结果",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "small.",
+      "size": "11px",
+      "text": "无调用标识的工具无法计时；日志未追平、读取失败或运行时离线时不判断",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(39, 39, 42)",
+      "ratio": 14.89,
+      "selector": "strong.",
+      "size": "12px",
+      "text": "排队时间较长",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.",
+      "size": "12px",
+      "text": "进入监控后持续等待达到 5 分钟",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "small.",
+      "size": "11px",
+      "text": "从开始观察等待状态计时",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(39, 39, 42)",
+      "ratio": 14.89,
+      "selector": "strong.",
+      "size": "12px",
+      "text": "运行失败",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.",
+      "size": "12px",
+      "text": "监控期间确认运行进入失败状态",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "small.",
+      "size": "11px",
+      "text": "启动前的失败单独作为历史记录展示",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(39, 39, 42)",
+      "ratio": 14.89,
+      "selector": "strong.",
+      "size": "12px",
+      "text": "运行时离线",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(32, 42, 56)",
+      "ratio": 14.49,
+      "selector": "span.",
+      "size": "12px",
+      "text": "活动运行关联的运行时状态为离线",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "small.",
+      "size": "11px",
+      "text": "离线不等于任务失败",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(86, 101, 121)",
+      "ratio": 5.94,
+      "selector": "p.mm-muted.mm-alert-rule-note",
+      "size": "12px",
+      "text": "规则覆盖当前最多 100 次被追踪运行；取消或重跑需要人工确认。",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.",
+      "size": "10px",
+      "text": "新版对照稿 · 所有系统写操作已隔离",
+      "visible": true
+    },
+    {
+      "bg": [
+        255,
+        255,
+        255
+      ],
+      "color": "rgb(91, 107, 128)",
+      "ratio": 5.44,
+      "selector": "span.",
+      "size": "10px",
+      "text": "真实快照 · 10 个任务 / 22 次运行 / 6,960 条日志",
+      "visible": true
+    }
+  ],
+  "url": "http://127.0.0.1:55317/?view=alerts",
+  "viewport": [
+    1437,
+    855
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "version": "0.12.13",
+  "source": "Installed DSH desktop plugin",
+  "originalSha256": "a70ea99ba03f347f4a10ff6f08180c5e023cb05463f50f652685f1ef65fb1666",
+  "pluginSha256": "15751b081c6ecc67913af4cf935899cd5a329d65361cdbd382f7b3d0af496d96",
+  "adaptation": "Only waterfall widget URL replaced with local identical asset",
+  "capturedAt": "2026-11-05T00:33:32.547Z"
+}

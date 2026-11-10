@@ -1,0 +1,1 @@
+{"baseUrl": "http://172.20.0.202:8088", "webUrl": "http://172.20.0.202:3000", "hasToken": true, "monitorEnabled": true, "aiDiagnosis": true, "noProgressMinutes": 10, "toolMinutes": 5, "queueMinutes": 5, "runMinutes": 30}
